@@ -1,0 +1,27 @@
+Main.py
+
+The main driver file that takes some input, calls other methods and displays result.
+
+
+
+Dataparser.py
+
+The function of this file is to read all 9 mat files and prepare the datas such the can be used for operational purpose.When The main method is called this class is automatically called for execution.
+
+
+
+Visualization.py
+
+This file displays different diagram such as voxel values corresponing to brain coordinates, value distribution.
+
+
+
+Statistics.py
+
+This file performs some basic statistical calculations such as minimum, maximum, median, mode, mean voxel values.
+
+
+
+Algorithm.py
+
+Runs different machine learning algorithms and evaluates the algorithms
