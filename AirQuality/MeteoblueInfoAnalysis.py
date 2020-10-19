@@ -6,7 +6,7 @@ from os.path import isfile, join
 
 from pandas_profiling import ProfileReport
 
-from AQ.DataPreparation import LoadMetadata
+from AirQuality.DataPreparation import LoadMetadata
 from timeit import default_timer as timer
 import numpy as np
 import pandas as pd

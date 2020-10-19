@@ -6,12 +6,12 @@ from matplotlib.colors import LinearSegmentedColormap
 from plotly.subplots import make_subplots
 from sklearn.cluster import KMeans
 from statsmodels.tsa.seasonal import seasonal_decompose
-from AQ.Correlation_Measures import *
-from AQ.DataPreparation import *
-from AQ.GeoMapPlotly import SliderMapCommon
-from AQ.GeoPandas import mapArrow, mapPlot
-from AQ.MeteoblueInfoAnalysis import *
-from AQ.Related.GeoMapMatplotLib import *
+from AirQuality.Correlation_Measures import *
+from AirQuality.DataPreparation import *
+from AirQuality.GeoMapPlotly import SliderMapCommon
+from AirQuality.GeoPandas import mapArrow, mapPlot
+from AirQuality.MeteoblueInfoAnalysis import *
+from AirQuality.Related.GeoMapMatplotLib import *
 import plotly.graph_objects as go
 import more_itertools
 from pandas_profiling import ProfileReport
@@ -616,8 +616,8 @@ if __name__ == '__main__':
     # BoxPlotDistrict(df)
     MeteoAnalysis(df)
 
-    # prof = ProfileReport(df['2017'].iloc[:,:10], minimal=False,title='Air Quality')
-    # prof.to_file(output_file='Air Quality.html')
+    # prof = ProfileReport(df['2017'].iloc[:,:10], minimal=False,title='AirQuality')
+    # prof.to_file(output_file='AirQuality.html')
 
     # df = df.fillna(df.rolling(6, min_periods=1, ).mean()).round(3)
 

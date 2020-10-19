@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-from AQ.AQ_Analysis import PLotlyTimeSeries
+from AirQuality.AQ_Analysis import PLotlyTimeSeries
 from Electricity.ElecCommon import PlotUsageTimeseries, createAndSaveTimeSeries
 
 mainpath = '/media/az/Study/Datasets/Electricity/DPDC data/'

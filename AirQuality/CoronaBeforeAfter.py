@@ -1,7 +1,7 @@
 import pandas as pd
 import plotly.graph_objects as go
 
-from AQ.DataPreparation import LoadMetadata, LoadSeries
+from AirQuality.DataPreparation import LoadMetadata, LoadSeries
 
 
 def GroupedBox(x):

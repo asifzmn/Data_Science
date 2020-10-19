@@ -1,6 +1,6 @@
 import plotly.graph_objects as go
 
-from AQ.DataPreparation import LoadData
+from AirQuality.DataPreparation import LoadData
 
 if __name__ == '__main__':
     # with open('bangladesh.geojson') as file : data = json.load(file)

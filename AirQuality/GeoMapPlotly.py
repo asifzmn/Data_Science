@@ -3,8 +3,8 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 
-from AQ.DataPreparation import getCategoryInfo, LoadMetadata, LoadSeries
-from AQ.MeteoblueInfoAnalysis import GetAllMeteoData
+from AirQuality.DataPreparation import getCategoryInfo, LoadMetadata, LoadSeries
+from AirQuality.MeteoblueInfoAnalysis import GetAllMeteoData
 
 
 def SliderMapCommon(df, metaFrame, timeformat, discrete=True):

@@ -10,13 +10,13 @@ from geopy.distance import geodesic
 from matplotlib import cm
 from matplotlib.lines import Line2D
 from plotly.offline import iplot
-from AQ.DataPreparation import LoadMetadata, getCategoryInfo, LoadSeries
+from AirQuality.DataPreparation import LoadMetadata, getCategoryInfo, LoadSeries
 from scipy.interpolate import griddata
 from numpy import linspace
 import plotly.graph_objects as go
 import plotly.express as px
 
-from AQ.MeteoblueInfoAnalysis import getFactorData
+from AirQuality.MeteoblueInfoAnalysis import getFactorData
 
 
 def Distance(dis1, dis2):

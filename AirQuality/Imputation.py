@@ -9,7 +9,7 @@ from tensorflow.python.keras import Sequential
 from tensorflow.python.keras.callbacks import EarlyStopping
 from tensorflow.python.keras.layers import LSTM, Dense, Masking, Dropout
 
-from AQ.DataPreparation import LoadData
+from AirQuality.DataPreparation import LoadData
 
 
 def BasicRNNImputation():

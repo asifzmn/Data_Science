@@ -9,7 +9,7 @@ import pickle as pk
 discard = 'Azimpur,Bhola,Patiya,Laksham,Netrakona,Madaripur,Ishurdi,Pabna,Tungipara,Ramganj,Raipur,Palang,Sherpur,Nagarpur,Sarishabari,Shahzadpur,Pirojpur,Maulavi_Bazar,Habiganj,Bhairab_Bazar,Sandwip,Satkania,Rangpur,Khagrachhari,Lakshmipur,Jamalpur,Saidpur,Chittagong,Lalmanirhat,Thakurgaon,Sylhet,Dinajpur'.split(
     ',')
 mainPath = '/media/az/Study/Air Analysis/Dataset/Berkely Earth Data/'
-datadir = '/home/az/PycharmProjects/ML/AQ/Data Directory/'
+datadir = '/home/az/PycharmProjects/ML/AirQuality/Data Directory/'
 
 def getCommonID(id=1): return ['selected', 'all', 'SouthAsianCountries'][id]
 

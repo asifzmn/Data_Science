@@ -4,7 +4,7 @@ import pandas as pd
 import requests
 import json
 
-from AQ.DataPreparation import LoadMetadata
+from AirQuality.DataPreparation import LoadMetadata
 
 if __name__ == '__main__':
     api_key = "886553d6fde7834df3190ac259963285"

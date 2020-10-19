@@ -9,9 +9,9 @@ from plotly import express as px
 from plotly import graph_objects as go
 from sklearn.cluster import Birch, KMeans
 from sklearn.preprocessing import MinMaxScaler
-from AQ.DataPreparation import getCategoryInfo, LoadData
-from AQ.Related.GeoMapMatplotLib import MapPlotting
-from AQ.Related.Heatmap import heatmap, annotate_heatmap
+from AirQuality.DataPreparation import getCategoryInfo, LoadData
+from AirQuality.Related.GeoMapMatplotLib import MapPlotting
+from AirQuality.Related.Heatmap import heatmap, annotate_heatmap
 
 cmap = ['Accent', 'Accent_r', 'Blues', 'Blues_r', 'BrBG', 'BrBG_r', 'BuGn', 'BuGn_r', 'BuPu', 'BuPu_r', 'CMRmap',
         'CMRmap_r', 'Dark2', 'Dark2_r', 'GnBu', 'GnBu_r', 'Greens', 'Greens_r', 'Greys', 'Greys_r', 'OrRd',

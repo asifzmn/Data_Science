@@ -13,7 +13,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
-from AQ.DataPreparation import LoadMetadata
+from AirQuality.DataPreparation import LoadMetadata
 
 
 def Scrap():
@@ -90,8 +90,8 @@ def Update():
 
 if __name__ == '__main__':
     metaFrame = LoadMetadata()
-    runningPath = '/media/az/Study/Air Analysis/AQ Dataset/MeteoblueJuly'
-    savePath = '/media/az/Study/Air Analysis/AQ Dataset/Meteoblue Scrapped Data/'
+    runningPath = '/media/az/Study/Air Analysis/AirQuality Dataset/MeteoblueJuly'
+    savePath = '/media/az/Study/Air Analysis/AirQuality Dataset/Meteoblue Scrapped Data/'
     runningPathcp, savePathcp = runningPath + " (copy)", savePath + " (copy)"
 
     Scrap()
