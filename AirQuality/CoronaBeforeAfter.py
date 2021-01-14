@@ -7,14 +7,14 @@ from AirQuality.DataPreparation import LoadMetadata, LoadSeries
 def GroupedBox(x):
     fig = go.Figure()
 
-    colorPal = ['#4AA02C', '#6AA121', '#7D0552']
+    # colorPal = ['#4AA02C', '#6AA121', '#7D0552']
 
     for year in pd.DatetimeIndex(x.index).year.unique():
         fig.add_trace(go.Box(
             y=x[str(year)],
             x=pd.DatetimeIndex(x.index).month_name(),
             name=year,
-            marker_color=colorPal[year - 2018]
+            # marker_color=colorPal[year - 2018]
         ))
 
     fig.update_layout(

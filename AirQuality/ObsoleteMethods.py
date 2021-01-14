@@ -395,6 +395,25 @@ def Bucketing(reading, bins):
                       [np.bincount(inds[i]) for i in range(reading.shape[1])]])
     return binsC / binsC.sum(1, keepdims=True)
 
+def LeaderFollower(df):
+    t_start, tau, step_size, window_size = 0, 3, 72, 180
+    t_end = t_start + window_size
+    rss = []
+    while t_end < df.shape[0]:
+        d1 = df['Feni'].iloc[t_start:t_end]
+        d2 = df['Rajshahi'].iloc[t_start:t_end]
+        rs = [crosscorr(d1, d2, lag) for lag in range(-int(tau), int(tau + 1))]
+        rss.append(rs)
+        t_start += step_size
+        t_end += step_size
+    rss = pd.DataFrame(rss)
+
+    f, ax = plt.subplots(figsize=(5, 20))
+    sns.heatmap(rss, cmap=sns.diverging_palette(175, 250, s=90, n=27), ax=ax)
+    ax.set(title='Rolling Windowed Time Lagged Cross Correlation', xlabel='Offset', ylabel='Epochs')
+    # ax.set_xticks([0, 50, 100, 151, 201, 251, 301])
+    # ax.set_xticklabels([-150, -100, -50, 0, 50, 100, 150]);
+    plt.show()
 
 def ShortLengthImputation(dataSummaries):
     dataset = dataSummaries[1]

@@ -12,14 +12,23 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
+from time import sleep
 
 from AirQuality.DataPreparation import LoadMetadata
 
 
 def Scrap():
+    list = ['Temperature [1000 hPa]', 'Temperature [850 hPa]', 'Temperature [700 hPa]', 'Wind speed [80 m]',
+            'Wind gusts [10 m]', 'Wind speed and direction [900 hPa]', 'Wind speed and direction [850 hPa]',
+            'Wind speed and direction [700 hPa]', 'Wind speed and direction [500 hPa]',
+            'Sunshine duration (minutes)', 'Solar radiation', 'Direct radiation', 'Diffuse radiation',
+            'Precipitation amount', 'Low, mid and high cloud cover', 'Pressure [mean sea level]',
+            'Surface skin temperature', 'Soil temperature [0-10 cm down]', 'Soil moisture [0-10 cm down]']
+
     lastDate, oneDay = datetime.strptime(listdir(savePath)[-1].split(' to ')[1], '%Y-%m-%d').date(), timedelta(days=1)
     datePoints = str(lastDate + oneDay) + ' to ' + str(date.today() - oneDay)
     targetPath = savePath + datePoints
+    # targetPath = savePath + '1datePoints'
     if not os.path.exists(targetPath): os.makedirs(targetPath)
 
     profile = FirefoxProfile()
@@ -42,16 +51,24 @@ def Scrap():
     for index, row in metaFrame.iterrows():
         print(row)
         location = ' '.join(map(str, row[['Latitude', 'Longitude']].values))
-        searchBar = driver.find_element_by_id("gls")
-        searchBar.send_keys(location + Keys.RETURN)
-        searchTable = WebDriverWait(driver, 10).until(expected_conditions.presence_of_all_elements_located(
+        driver.find_element_by_id("gls").send_keys(location + Keys.RETURN)
+
+        searchTable = WebDriverWait(driver, 30).until(expected_conditions.presence_of_all_elements_located(
             (By.XPATH, "//table[@class = 'search_results']//tr")))
         searchTable[1].find_elements_by_xpath(".//td")[1].click()
 
-        for tickBox in ["relhum2m", "pressure", "clouds", "sunshine", "swrad", "directrad", "diffuserad", "windgust",
-                        "wind+dir80m", "wind+dir900mb", "wind+dir850mb", "wind+dir700mb", "wind+dir500mb", "temp1000mb",
-                        "temp850mb", "temp700mb", "tempsfc", "soiltemp0to10", "soilmoist0to10"
-                        ]: driver.find_element_by_id(tickBox).click()
+        factorInput = '//*[@id="wrapper-main"]/div/main/div/div[2]/form/div[5]/div[1]/span/span[1]/span/ul/li[4]/input'
+        factors = WebDriverWait(driver, 30).until(expected_conditions.presence_of_all_elements_located
+                                                  ((By.XPATH, factorInput)))[0]
+        # factors.send_keys('Total cloud cover' + '\n' )
+        factors.send_keys('\n'.join(map(str, list)) + '\n')
+        sleep(1)
+
+        # for tickBox in ["relhum2m", "pressure", "clouds", "sunshine", "swrad", "directrad", "diffuserad", "windgust",
+        #                 "wind+dir80m", "wind+dir900mb", "wind+dir850mb", "wind+dir700mb", "wind+dir500mb", "temp1000mb",
+        #                 "temp850mb", "temp700mb", "tempsfc", "soiltemp0to10", "soilmoist0to10"
+        #                 ]: driver.find_element_by_id(tickBox).click()
+
         datePicker = driver.find_element_by_id('daterange')
         datePicker.clear()
         datePicker.send_keys(datePoints + Keys.RETURN)
@@ -61,7 +78,7 @@ def Scrap():
         # shutil.move(filename, os.path.join(targetPath, index + '.csv'))
         print(timer() - start)
 
-    time.sleep(3)
+    time.sleep(15)
     for file, zone in zip(sorted(Path(targetPath).iterdir(), key=os.path.getmtime), metaFrame.index.values):
         shutil.move(file, os.path.join(targetPath, zone + '.csv'))
 
@@ -91,7 +108,7 @@ def Update():
 if __name__ == '__main__':
     metaFrame = LoadMetadata()
     runningPath = '/media/az/Study/Air Analysis/AirQuality Dataset/MeteoblueJuly'
-    savePath = '/media/az/Study/Air Analysis/AirQuality Dataset/Meteoblue Scrapped Data/'
+    savePath = '/media/az/Study/Air Analysis/AQ Dataset/Meteoblue Scrapped Data/'
     runningPathcp, savePathcp = runningPath + " (copy)", savePath + " (copy)"
 
     Scrap()

@@ -109,18 +109,23 @@ def MapScatter(ax, data=None):
     # colorScale = ['#C38EC7','#E42217','#FFD801','#5EFB6E','#5CB3FF','#34282C']
     # color_ton = [colorScale[val] for val in np.digitize(data, AQScale[1:-1])]
 
-    ax.scatter(x=data.Longitude.astype('float64'), y=data.Latitude.astype('float64'), zorder=1, alpha=1,
-               c=data.color, s=150, marker='H', edgecolor='#3D3C3A', linewidth=1)
+    # ax.scatter(x=data.Longitude.astype('float64'), y=data.Latitude.astype('float64'), zorder=1, alpha=1,
+    #            c=data.color, s=150, marker='H', edgecolor='#3D3C3A', linewidth=1)
+
+    for idx,row in data.iterrows():
+        ax.scatter(x=row.Longitude, y=row.Latitude, zorder=1, alpha=1,
+                   c='#566D7E',s=300, marker=row.symbol, edgecolor='#3D3C3A', linewidth=1)
 
 
 def MapLegend(ax, legendData):
-    lines = [Line2D([0], [0], color=c, linewidth=5, linestyle='-') for c in legendData[1].color]
+    # lines = [Line2D([0], [0], color=c, linewidth=5, linestyle='-') for c in legendData[1].color]
+    lines = [Line2D([], [], color='#566D7E',marker=s,linestyle='None',markersize=15) for s in legendData[1].symbol]
     ax.legend(lines, legendData[1].category, loc='lower left', prop={'size': 15}, title=legendData[0])
 
 
 def MapAnnotate(ax, data):
     for idx, row in (data.iterrows()): ax.annotate(idx, (row.Longitude - len(idx) * .015, row.Latitude - .1),
-                                                   fontsize=9)
+                                                   fontsize=12)
 
 
 def mapPlot(data, legendData, save=None):

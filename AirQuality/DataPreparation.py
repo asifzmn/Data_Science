@@ -9,7 +9,7 @@ import pickle as pk
 discard = 'Azimpur,Bhola,Patiya,Laksham,Netrakona,Madaripur,Ishurdi,Pabna,Tungipara,Ramganj,Raipur,Palang,Sherpur,Nagarpur,Sarishabari,Shahzadpur,Pirojpur,Maulavi_Bazar,Habiganj,Bhairab_Bazar,Sandwip,Satkania,Rangpur,Khagrachhari,Lakshmipur,Jamalpur,Saidpur,Chittagong,Lalmanirhat,Thakurgaon,Sylhet,Dinajpur'.split(
     ',')
 mainPath = '/media/az/Study/Air Analysis/Dataset/Berkely Earth Data/'
-datadir = '/home/az/PycharmProjects/ML/AirQuality/Data Directory/'
+datadir = '/media/az/Study/Air Analysis/Data Directory/'
 
 def getCommonID(id=1): return ['selected', 'all', 'SouthAsianCountries'][id]
 
@@ -139,7 +139,8 @@ def LoadSeries(data=None, name='reading'):
         df = df[sorted(df.columns.values)]
         df.to_feather(fname)
 
-    return pd.read_feather(fname).set_index('index', drop=True)['2017':]
+    # return pd.read_feather(fname).set_index('index', drop=True)['2017':]
+    return pd.read_feather(fname).set_index('index', drop=True)['2017':].rename(columns={'Azimpur': 'Dhaka'}).sort_index(axis=1)
 
 
 def LoadMetadata(allDistrictMetaData=None):
@@ -151,7 +152,8 @@ def LoadMetadata(allDistrictMetaData=None):
             pd.to_numeric).round(5)
         metaFrame.to_feather(metadataFileName)
 
-    return pd.read_feather(metadataFileName).set_index('Zone', drop=True)
+    # return pd.read_feather(metadataFileName).set_index('Zone', drop=True)
+    return pd.read_feather(metadataFileName).set_index('Zone', drop=True).rename(index={'Azimpur': 'Dhaka'}).sort_index(axis = 0)
 
 
 if __name__ == '__main__':

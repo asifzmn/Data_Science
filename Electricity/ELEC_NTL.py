@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 
 
 def Choropleth(df):
-    with open('/home/az/Desktop/nocs.geojson') as json_file:
+    with open('/media/az/Study/Datasets/Bangladesh/nocs.geojson') as json_file:
         counties = json.load(json_file)
     a = counties['features'][0]['geometry']['coordinates']
     print(a)
@@ -34,11 +34,11 @@ def Choropleth(df):
 
 if __name__ == '__main__':
     # dfElec = pd.read_csv('Data Directory/NOCSELEC2.csv', index_col='MONTH')
-    dfElec = pd.read_csv('Data Directory/NOCSELEC2.csv', index_col='Unnamed: 0', parse_dates=[0])
+    dfElec = pd.read_csv('/media/az/Study/Datasets/Electricity/Data Directory/NOCSELEC3.csv', index_col='Unnamed: 0', parse_dates=[0])
     dfElec.rename(
         columns={'Azimpur': 'AZIMPUR', 'SHAMOLY': 'SHYAMOLI', 'SHERE-B-NAGAR': 'SHERE B.NAGAR', 'Lalbag': 'LALBAG'},
         inplace=True)
-    dfNTL = pd.read_csv('Data Directory/NOCSNTL.csv', index_col='NOCS').drop(['Started', 'type'], axis=1).astype(
+    dfNTL = pd.read_csv('/media/az/Study/Datasets/Electricity/Data Directory/NOCSNTL.csv', index_col='NOCS').drop(['Started', 'type'], axis=1).astype(
         'float64')
     # dfNTL = dfNTL[dfNTL.columns.drop(list(dfNTL.filter(regex='variance')))]
     dfNTL = dfNTL.T[dfElec.columns].astype('float64')
@@ -47,7 +47,10 @@ if __name__ == '__main__':
     dfNTLsum, dfNTLmean = dfNTL.iloc[19::3], dfNTL.iloc[20::3]
     # dfNTLsum.index,dfNTLmean.index = pd.to_datetime(dfNTLsum.index.str[:4]),pd.to_datetime(dfNTLmean.index.str[:4])
     dfNTLsum.index, dfNTLmean.index = pd.to_datetime(dfNTLsum.index.str[:10]), pd.to_datetime(dfNTLmean.index.str[:10])
+    # print(dfNTLsum)
+    # print(dfNTLmean)
     # print(dfElec)
+
     # print(dfNTLsum,dfNTLmean)
 
     # PLotlyTimeSeries(dfElec)
@@ -56,11 +59,16 @@ if __name__ == '__main__':
 
     sumCorr, meanCorr = dfElec.corrwith(dfNTLsum, axis=0), dfElec.corrwith(dfNTLmean, axis=0)
     sumCorr, meanCorr = sumCorr.round(3), meanCorr.round(3)
-    sumCorr.name, meanCorr.name = 'sumCorr', 'meanCorr'
+    sumCorr.name, meanCorr.name = 'Correlation with sum NTL', 'Correlation with mean NTL'
+
+    # print(sumCorr)
+    # print(meanCorr)
     # print(sumCorr.to_latex(col_space=3).replace("\\\n", "\\ \hline\n"))
     # print(meanCorr.to_latex(col_space=3).replace("\\\n", "\\ \hline\n"))
+    # print(pd.concat([meanCorr,sumCorr],axis=1).to_html())
 
-    Choropleth(sumCorr.reset_index())
+
+    # Choropleth(sumCorr.reset_index())
 
     exit()
     # print(dfNTL)

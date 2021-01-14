@@ -9,25 +9,25 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 L.control.scale().addTo(map);
 
 
-//var popup = L.popup()
-//.setLatLng([21.510, 91.212])
-//.setContent("I am a standalone popup.")
-//.openOn(map);
+// var popup = L.popup()
+// .setLatLng([21.510, 91.212])
+// .setContent("I am a standalone popup.")
+// .openOn(map);
 
-//function onMapClick(e) {alert("You clicked the map at " + e.latlng)}
-//mymap.on('click', onMapClick);
+// function onMapClick(e) {alert("You clicked the map at " + e.latlng)}
+// map.on('click', onMapClick);
 
 
 //var popup = L.popup();
 
-//function onMapClick(e) {
-//    popup
-//        .setLatLng(e.latlng)
-//        .setContent("You clicked the map at " + e.latlng.toString())
-//        .openOn(map);
-//}
+function onMapClick(e) {
+   popup
+       .setLatLng(e.latlng)
+       .setContent("You clicked the map at " + e.latlng.toString())
+       .openOn(map);
+}
 
-//map.on('click', onMapClick);
+map.on('click', onMapClick);
 
 function onEachFeature(feature, layer) {
     // does this feature have a property named popupContent?

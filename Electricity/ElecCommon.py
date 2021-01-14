@@ -1,7 +1,6 @@
 import pandas as pd
 import plotly.graph_objects as go
 
-
 def processTS(path): return pd.read_csv(path, index_col='Time', low_memory=False, parse_dates=[0])
 
 
