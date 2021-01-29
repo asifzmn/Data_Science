@@ -4,12 +4,15 @@ from urllib.request import urlopen
 import pandas as pd
 import numpy as np
 import pickle as pk
+import pandas as pd
 
 [Year, Month, Day, UTC_Hour, PM25, PM10_mask, Retrospective] = range(7)
 discard = 'Azimpur,Bhola,Patiya,Laksham,Netrakona,Madaripur,Ishurdi,Pabna,Tungipara,Ramganj,Raipur,Palang,Sherpur,Nagarpur,Sarishabari,Shahzadpur,Pirojpur,Maulavi_Bazar,Habiganj,Bhairab_Bazar,Sandwip,Satkania,Rangpur,Khagrachhari,Lakshmipur,Jamalpur,Saidpur,Chittagong,Lalmanirhat,Thakurgaon,Sylhet,Dinajpur'.split(
     ',')
+aq_directory = '/home/asif/Work/Air Analysis/'
 mainPath = '/media/az/Study/Air Analysis/Dataset/Berkely Earth Data/'
-datadir = '/media/az/Study/Air Analysis/Data Directory/'
+datadir = '/home/asif/Work/Air Analysis/Data Directory/'
+
 
 def getCommonID(id=1): return ['selected', 'all', 'SouthAsianCountries'][id]
 
