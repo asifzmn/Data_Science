@@ -627,7 +627,7 @@ def LatexFormatting(stats):
 def CrossCorrelation(df):
     def HeatmapCrossCorr(df):
         plt.figure(figsize=(9, 9))
-        sns.heatmap(df.unstack(), vmin=0, vmax=3, cmap='Purples')
+        sns.heatmap(df, vmin=0, vmax=3, cmap='Purples')
         plt.tight_layout()
         plt.show()
 
@@ -668,8 +668,12 @@ def CrossCorrelation(df):
 
     for key, df in lagTimeMatrix.iloc[:, :].items():
         if df.nunique() > 1:
-            HeatmapCrossCorr(df)
-            mapArrow(metaFrame, df.unstack(), df.name)
+            print(key)
+            if key == '2019-01-27 to 2019-02-01' or key == '2019-10-26 to 2019-10-31':
+                print(df[df!=0])
+                df[df!=0].to_csv(key+'.csv')
+                HeatmapCrossCorr(df.unstack())
+                mapArrow(metaFrame, df.unstack(), df.name)
 
 
 
