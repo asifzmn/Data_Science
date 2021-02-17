@@ -36,10 +36,11 @@ def Scrap():
     profile.set_preference('browser.download.manager.showWhenStarting', False)
     # profile.set_preference('browser.download.dir', os.getcwd())
     profile.set_preference('browser.download.dir', targetPath)
-    profile.set_preference('browser.helperApps.neverAsk.saveToDisk', 'text/plain')
+    # profile.set_preference('browser.helperApps.neverAsk.saveToDisk', 'text/plain')
+    profile.set_preference("browser.helperApps.neverAsk.saveToDisk", "text/csv")
     profile.set_preference('general.warnOnAboutConfig', False)
     profile.update_preferences()
-    gecko_path = "/media/az/Study/Firefox Web Driver/geckodriver.exe"
+    gecko_path = "/media/az/Study/Work/Firefox Web Driver/geckodriver.exe"
     # path = "/media/az/Study/FFWD/Mozilla Firefox/firefox.exe"
     # binary = FirefoxBinary(path)
     driver = Firefox(firefox_profile=profile, executable_path=gecko_path)

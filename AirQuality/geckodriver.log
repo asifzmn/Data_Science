@@ -26268,3 +26268,1057 @@ JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 987: NS_ERRO
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1611639281621	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileV3r8L7"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1611639300932	Marionette	INFO	Listening on port 34315
+1611639302665	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/shahbag_bangladesh_7697915, line 122: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+1611639342215	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/shahbag_bangladesh_7697915, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/barishal_bangladesh_1336137, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+1611639358200	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+1611639364621	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/bogra_bangladesh_1337233, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+1611639761309	Marionette	INFO	Stopped listening on port 34315
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1611639770371	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileErUuZN"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1611639778389	Marionette	INFO	Listening on port 41151
+1611639778425	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/shahbag_bangladesh_7697915, line 122: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://static.meteoblue.com/build/website.334/main.js, line 38: ChunkLoadError: Loading chunk 894 failed.
+(error: https://www.meteoblue.com/build/website/select2_c5ad09.js)
+JavaScript error: https://static.meteoblue.com/build/website.334/main.js, line 38: ChunkLoadError: Loading chunk 186 failed.
+(error: https://www.meteoblue.com/build/website/datepicker_c5ad09.js)
+JavaScript error: https://static.meteoblue.com/build/website.334/main.js, line 38: ChunkLoadError: Loading chunk 961 failed.
+(error: https://www.meteoblue.com/build/website/bloo_c5ad09.js)
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/shahbag_bangladesh_7697915, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/barishal_bangladesh_1336137, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/bogra_bangladesh_1337233, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/azimpur_bangladesh_7701354, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/jam%c4%81lpur_bangladesh_1185106, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/jessore_bangladesh_1336140, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/kishorganj_bangladesh_1337249, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/kushtia_bangladesh_1185191, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/lakshm%c4%abpur_bangladesh_1196292, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/madaripur_bangladesh_1337245, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/mymensingh_bangladesh_1185162, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/n%c4%81garpur_bangladesh_1185159, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/narail_bangladesh_1185293, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/n%c4%81r%c4%81yanganj_bangladesh_1185155, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/narsingdi_bangladesh_1185117, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/naw%c4%81bganj_bangladesh_1337240, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/p%c4%81bna_bangladesh_1336143, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/p%c4%81lang_bangladesh_1191368, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/p%c4%81r-naogaon_bangladesh_1192366, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/pirojpur_bangladesh_1185138, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/r%c4%81ipur_bangladesh_1185236, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/rajshahi_bangladesh_1185128, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/r%c4%81mganj_bangladesh_1185127, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/sarish%c4%81b%c4%81ri_bangladesh_1188569, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/s%c4%81tkhira_bangladesh_1185111, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/sh%c4%81hz%c4%81dpur_bangladesh_1185121, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/sherpur_bangladesh_1337248, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/sirajganj_bangladesh_1185115, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/t%c4%81ng%c4%81il_bangladesh_1336144, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/tongi_bangladesh_1185098, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/tungip%c4%81ra_bangladesh_1185920, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1611640111929	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileysPBzb"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1611640126633	Marionette	INFO	Listening on port 33189
+1611640126772	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/shahbag_bangladesh_7697915, line 122: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/shahbag_bangladesh_7697915, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/barishal_bangladesh_1336137, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/bogra_bangladesh_1337233, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1611640447140	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileqjOIGr"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1611640454213	Marionette	INFO	Listening on port 44405
+1611640454282	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/shahbag_bangladesh_7697915, line 122: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/shahbag_bangladesh_7697915, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/barishal_bangladesh_1336137, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/bogra_bangladesh_1337233, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/azimpur_bangladesh_7701354, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/jam%c4%81lpur_bangladesh_1185106, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 987: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]
+1611640529512	Marionette	INFO	Stopped listening on port 44405
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1611640629063	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile79Lbzf"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1611640634758	Marionette	INFO	Listening on port 42995
+1611640634803	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/shahbag_bangladesh_7697915, line 122: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://static.meteoblue.com/build/website.334/main.js, line 38: ChunkLoadError: Loading chunk 186 failed.
+(error: https://www.meteoblue.com/build/website/datepicker_c5ad09.js)
+JavaScript error: https://static.meteoblue.com/build/website.334/main.js, line 38: ChunkLoadError: Loading chunk 894 failed.
+(error: https://www.meteoblue.com/build/website/select2_c5ad09.js)
+JavaScript error: https://static.meteoblue.com/build/website.334/main.js, line 38: ChunkLoadError: Loading chunk 961 failed.
+(error: https://www.meteoblue.com/build/website/bloo_c5ad09.js)
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/shahbag_bangladesh_7697915, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/barishal_bangladesh_1336137, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/bogra_bangladesh_1337233, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/azimpur_bangladesh_7701354, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/jam%c4%81lpur_bangladesh_1185106, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/jessore_bangladesh_1336140, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/kishorganj_bangladesh_1337249, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/kushtia_bangladesh_1185191, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 987: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1611640770892	Marionette	INFO	Stopped listening on port 42995
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1611640816796	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileTaxTFV"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1611640824829	Marionette	INFO	Listening on port 36107
+1611640824959	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/shahbag_bangladesh_7697915, line 122: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://static.meteoblue.com/build/website.334/main.js, line 38: ChunkLoadError: Loading chunk 207 failed.
+(error: https://www.meteoblue.com/build/website/207_c5ad09.js)
+JavaScript error: https://static.meteoblue.com/build/website.334/main.js, line 38: ChunkLoadError: Loading chunk 894 failed.
+(error: https://www.meteoblue.com/build/website/select2_c5ad09.js)
+JavaScript error: https://static.meteoblue.com/build/website.334/main.js, line 38: ChunkLoadError: Loading chunk 961 failed.
+(error: https://www.meteoblue.com/build/website/bloo_c5ad09.js)
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/shahbag_bangladesh_7697915, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/barishal_bangladesh_1336137, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/bogra_bangladesh_1337233, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 987: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1611640878919	Marionette	INFO	Stopped listening on port 36107
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1611640982215	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilezFNcxR"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1611640989656	Marionette	INFO	Listening on port 38245
+1611640989759	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/shahbag_bangladesh_7697915, line 122: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/shahbag_bangladesh_7697915, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/barishal_bangladesh_1336137, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/bogra_bangladesh_1337233, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/azimpur_bangladesh_7701354, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1611641120016	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilewh3LJn"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1611641126032	Marionette	INFO	Listening on port 36807
+1611641126062	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/shahbag_bangladesh_7697915, line 122: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/shahbag_bangladesh_7697915, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/barishal_bangladesh_1336137, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/bogra_bangladesh_1337233, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/azimpur_bangladesh_7701354, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/jam%c4%81lpur_bangladesh_1185106, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/jessore_bangladesh_1336140, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/kishorganj_bangladesh_1337249, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/kushtia_bangladesh_1185191, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/lakshm%c4%abpur_bangladesh_1196292, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+Exiting due to channel error.
+JavaScript error: , line 0: NS_ERROR_FAILURE
+Exiting due to channel error.
+Exiting due to channel error.
+1611641280027	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilemx9EF0"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1611641285653	Marionette	INFO	Listening on port 40863
+1611641285764	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/shahbag_bangladesh_7697915, line 122: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/shahbag_bangladesh_7697915, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/barishal_bangladesh_1336137, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/bogra_bangladesh_1337233, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/azimpur_bangladesh_7701354, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/jam%c4%81lpur_bangladesh_1185106, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/jessore_bangladesh_1336140, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/kishorganj_bangladesh_1337249, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 987: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]
+1611641360428	Marionette	INFO	Stopped listening on port 40863
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1611641407514	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile4IYfsk"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1611641413292	Marionette	INFO	Listening on port 39901
+1611641413352	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/shahbag_bangladesh_7697915, line 122: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/shahbag_bangladesh_7697915, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/barishal_bangladesh_1336137, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/bogra_bangladesh_1337233, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/azimpur_bangladesh_7701354, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+1611641507409	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexpTwEX"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1611641513566	Marionette	INFO	Listening on port 38949
+1611641513652	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 987: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+1611641517748	Marionette	INFO	Stopped listening on port 39901
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/shahbag_bangladesh_7697915, line 122: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://static.meteoblue.com/build/website.334/main.js, line 38: ChunkLoadError: Loading chunk 540 failed.
+(error: https://www.meteoblue.com/build/website/540_c5ad09.js)
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/barishal_bangladesh_1336137, line 122: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 987: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]
+1611641587893	Marionette	INFO	Stopped listening on port 38949
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1611642121860	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile6shZul"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1611642127755	Marionette	INFO	Listening on port 36799
+1611642127798	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/shahbag_bangladesh_7697915, line 122: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/shahbag_bangladesh_7697915, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/barishal_bangladesh_1336137, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/bogra_bangladesh_1337233, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/azimpur_bangladesh_7701354, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/jam%c4%81lpur_bangladesh_1185106, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/jessore_bangladesh_1336140, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/kishorganj_bangladesh_1337249, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/kushtia_bangladesh_1185191, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/lakshm%c4%abpur_bangladesh_1196292, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/madaripur_bangladesh_1337245, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/mymensingh_bangladesh_1185162, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/n%c4%81garpur_bangladesh_1185159, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/narail_bangladesh_1185293, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/n%c4%81r%c4%81yanganj_bangladesh_1185155, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/narsingdi_bangladesh_1185117, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/naw%c4%81bganj_bangladesh_1337240, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/p%c4%81bna_bangladesh_1336143, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/p%c4%81lang_bangladesh_1191368, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/p%c4%81r-naogaon_bangladesh_1192366, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/pirojpur_bangladesh_1185138, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/r%c4%81ipur_bangladesh_1185236, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/rajshahi_bangladesh_1185128, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/r%c4%81mganj_bangladesh_1185127, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/sarish%c4%81b%c4%81ri_bangladesh_1188569, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/s%c4%81tkhira_bangladesh_1185111, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/sh%c4%81hz%c4%81dpur_bangladesh_1185121, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/sherpur_bangladesh_1337248, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/sirajganj_bangladesh_1185115, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/t%c4%81ng%c4%81il_bangladesh_1336144, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/tongi_bangladesh_1185098, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/tungip%c4%81ra_bangladesh_1185920, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 987: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]
+1611643011016	Marionette	INFO	Stopped listening on port 36799
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1611643046085	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5IcrP9"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1611643051538	Marionette	INFO	Listening on port 37467
+1611643051637	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/shahbag_bangladesh_7697915, line 122: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+1611643074111	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/shahbag_bangladesh_7697915, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/en/weather/search/index?query=22.705+90.3701, line 187: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+1611643208429	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileIEyrMZ"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1611643213199	Marionette	INFO	Listening on port 46607
+1611643213261	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/shahbag_bangladesh_7697915, line 122: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://static.meteoblue.com/build/website.334/main.js, line 38: ChunkLoadError: Loading chunk 186 failed.
+(error: https://www.meteoblue.com/build/website/datepicker_c5ad09.js)
+JavaScript error: https://static.meteoblue.com/build/website.334/main.js, line 38: ChunkLoadError: Loading chunk 894 failed.
+(error: https://www.meteoblue.com/build/website/select2_c5ad09.js)
+JavaScript error: https://static.meteoblue.com/build/website.334/main.js, line 38: ChunkLoadError: Loading chunk 961 failed.
+(error: https://www.meteoblue.com/build/website/bloo_c5ad09.js)
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/shahbag_bangladesh_7697915, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+console.error: services.settings: 
+  main/message-groups Signature failed  TypeError: NetworkError when attempting to fetch resource.
+console.error: services.settings: 
+  main/fxmonitor-breaches Signature failed  TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/barishal_bangladesh_1336137, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/bogra_bangladesh_1337233, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+console.error: services.settings: 
+  main/partitioning-exempt-urls Signature failed  TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/azimpur_bangladesh_7701354, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/jam%c4%81lpur_bangladesh_1185106, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+console.error: services.settings: 
+  main/cfr-fxa Signature failed  TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/jessore_bangladesh_1336140, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/kishorganj_bangladesh_1337249, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/kushtia_bangladesh_1185191, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+1611643314717	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/lakshm%c4%abpur_bangladesh_1196292, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+1611643321887	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/madaripur_bangladesh_1337245, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+1611643335658	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/mymensingh_bangladesh_1185162, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+1611643348864	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/n%c4%81garpur_bangladesh_1185159, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+1611643362103	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/narail_bangladesh_1185293, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+1611643375800	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+1611643382079	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/n%c4%81r%c4%81yanganj_bangladesh_1185155, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+1611643389179	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/narsingdi_bangladesh_1185117, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+1611643402572	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/naw%c4%81bganj_bangladesh_1337240, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/p%c4%81bna_bangladesh_1336143, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+1611643427931	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+1611643434224	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/p%c4%81lang_bangladesh_1191368, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+1611643441342	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+1611643447728	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/p%c4%81r-naogaon_bangladesh_1192366, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+1611643454885	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+1611643461721	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/pirojpur_bangladesh_1185138, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+1611643469624	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+1611643475944	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/r%c4%81ipur_bangladesh_1185236, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+1611643482454	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/rajshahi_bangladesh_1185128, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+1611643496837	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/r%c4%81mganj_bangladesh_1185127, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+1611643510516	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/sarish%c4%81b%c4%81ri_bangladesh_1188569, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+1611643523793	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/s%c4%81tkhira_bangladesh_1185111, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+1611643536963	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/sh%c4%81hz%c4%81dpur_bangladesh_1185121, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+1611643550197	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+1611643556530	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/sherpur_bangladesh_1337248, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+1611643564199	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+1611643570471	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/sirajganj_bangladesh_1185115, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+1611643577683	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/t%c4%81ng%c4%81il_bangladesh_1336144, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+1611643590896	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+1611643597193	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/tongi_bangladesh_1185098, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+1611643604460	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/en/weather/archive/export/tungip%c4%81ra_bangladesh_1185920, line 191: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_c5ad09.js, line 1: TypeError: t is undefined
+1611643617677	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 987: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]
+1611669619687	Marionette	INFO	Stopped listening on port 37467
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 987: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]
+1611669625234	Marionette	INFO	Stopped listening on port 46607
+1612509296423	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileGNCM9D"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1612509323857	Marionette	INFO	Listening on port 43559
+1612509324208	Marionette	WARN	TLS certificate errors will be ignored for this session
+1612509324273	Marionette	ERROR	[18] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_a744ee.js, line 1: TypeError: t is undefined
+1612510016897	Marionette	INFO	Stopped listening on port 43559
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1613488659818	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileL8PKEV"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 775))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 422))
+1613488691396	Marionette	INFO	Listening on port 36321
+1613488691770	Marionette	WARN	TLS certificate errors will be ignored for this session
+1613488691826	Marionette	ERROR	[18] No reply from Marionette:Register
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+1613488731731	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+1613488739249	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+1613488753043	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+1613488766619	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1613488773063	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+1613488782955	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+1613488796681	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+1613488810981	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+1613488824882	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1613488831222	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+1613488839352	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+1613488852820	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+1613488865723	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+1613488873527	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+1613488880033	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+1613488894529	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+1613488908736	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+1613488923585	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+1613489038589	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+1613489044969	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+1613489053477	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+1613489059880	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+1613489068725	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+1613489075089	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+1613489084011	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+1613489090356	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_35b314.js, line 1: TypeError: t is undefined
+1613489096976	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1613502697526	Marionette	INFO	Stopped listening on port 36321
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
