@@ -70,13 +70,6 @@ def HeatMap(data, tag, cbarlabel=None, precision=2, cmap="Purples"):
     plt.show()
 
 
-def DayNightAnalysis(dataSummaries):
-    dayTimeData = (dataSummaries[-1][1][:, (dataSummaries[-1][0][:, -1].astype('float64') >= 6) & (
-            dataSummaries[-1][0][:, -1].astype('float64') < 18)])
-    nightTimedata = (dataSummaries[-1][1][:, (dataSummaries[-1][0][:, -1].astype('float64') < 6) | (
-            dataSummaries[-1][0][:, -1].astype('float64') >= 18)])
-
-
 def SeasonAnalysis(dataSummary, allDistrictMetaData):
     seasonNames = ['Summer', 'Rain', 'Winter']
     mappedReading = (np.vstack((np.transpose(dataSummary[0])[0].astype('float64'), dataSummary[1])))

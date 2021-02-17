@@ -10,7 +10,7 @@ from geopy.distance import geodesic
 from matplotlib import cm
 from matplotlib.lines import Line2D
 from plotly.offline import iplot
-from AirQuality.DataPreparation import LoadMetadata, getCategoryInfo, LoadSeries
+from AirQuality.DataPreparation import LoadMetadata, getCategoryInfo, LoadSeries, aq_directory
 from scipy.interpolate import griddata
 from numpy import linspace
 import plotly.graph_objects as go
@@ -71,10 +71,11 @@ def Pie(ax, ratiodata):
 
 
 def Arrows(ax, vec):
-    colorGen = cm.get_cmap('viridis', 256)
+    colorGen = cm.get_cmap('Purples', 256)
     # newcolors = colorGen(np.linspace(0, 256, 7))
     # pal = colorGen(np.linspace(0, 1, 15))[4:11][::-1]
-    pal = colorGen(np.linspace(0, 1, 5))[1:5][::-1]
+    pal = colorGen(np.linspace(0, 1, 5))[1:5]
+    # pal = []
 
     metaFrame = LoadMetadata()
     for x in range(len(vec)):
@@ -86,7 +87,7 @@ def Arrows(ax, vec):
                      metaFrame.iloc[y]['Longitude'] - metaFrame.iloc[x]['Longitude'],
                      metaFrame.iloc[y]['Latitude'] - metaFrame.iloc[x]['Latitude'],  # width=.01 * vec.iloc[x][y],
                      # metaFrame.iloc[y]['Latitude'] - metaFrame.iloc[x]['Latitude'], width=.001 * 3,
-                     head_width=.045, head_length=0.1, length_includes_head=True, zorder=1,
+                     head_width=.075, head_length=0.1, length_includes_head=True, zorder=1,
                      color=pal[int(vec.iloc[x][y])],
                      # head_width=.045, head_length=0.1, length_includes_head=True, zorder=1, color=pal[-1],
                      ls='-')
@@ -96,7 +97,7 @@ def Arrows(ax, vec):
 def setMap(x=1.5):
     plt.rcParams['figure.figsize'] = (8 * x, 10 * x)
     # df_admin = gpd.read_file('/media/az/Study/Air Analysis/Maps/districts.geojson')
-    df_admin = gpd.read_file('/media/az/Study/Air Analysis/Maps/districts.geojson')
+    df_admin = gpd.read_file(aq_directory+'Maps/districts.geojson')
     return df_admin.plot(color='#E5E4E2', edgecolor='#837E7C')
 
 
@@ -125,7 +126,7 @@ def MapLegend(ax, legendData):
 
 def MapAnnotate(ax, data):
     for idx, row in (data.iterrows()): ax.annotate(idx, (row.Longitude - len(idx) * .015, row.Latitude - .1),
-                                                   fontsize=12)
+                                                   fontsize=15)
 
 
 def mapPlot(data, legendData, save=None):
@@ -133,6 +134,7 @@ def mapPlot(data, legendData, save=None):
     MapScatter(ax, data)
     MapAnnotate(ax, data)
     MapLegend(ax, legendData)
+    plt.tight_layout()
     plt.show()
     if save is not None:
         plt.savefig(save + '.png', dpi=300)
@@ -146,6 +148,7 @@ def mapArrow(data, mat, times, save=None):
     Arrows(ax, mat)
     # plt.title('From '+str(times[0])+' to '+str(times[-1]))
     plt.title(times)
+    plt.tight_layout()
     plt.show()
 
     if save is not None:
