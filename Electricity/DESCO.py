@@ -1,22 +1,15 @@
-import os
 from collections import Counter
-import numpy as np
-import pandas as pd
 import plotly.graph_objects as go
 from Electricity.ElecCommon import *
 
 mainpath = '/home/asif/Datasets/Electricity/DESCO data/'
 # mainpath = '/media/az/Study/Datasets/Electricity/DESCO data/'
-tsPath, dlPath, rawPath, XBa2i, XCa2i = 'DESCO Data Timeseries/', 'DESCO Data Delay/', 'raw data/', 'XBa2i.csv', 'XCa2i.csv'
-tsPathcopy, dlPathcopy = 'DESCO Data Timeseries (copy)/', 'DESCO Data Delay (copy)/'
-rawdataPath = mainpath + rawPath
+ts_path, dl_path, rawdataPath, XBa2i, XCa2i = mainpath + 'DESCO Data Timeseries/', mainpath + 'DESCO Data Delay/', mainpath + 'raw data/', '/XBa2i.csv', '/XCa2i.csv'
 all_zones = os.listdir(rawdataPath)
-discard_zones = ['Monipur', 'Kafrul', 'Agargaon', 'Tongi_West', 'Rupnagor', 'Shahali', 'Pallabi', 'Dakshinkhan'][:-1]
+# discard_zones = ['Monipur', 'Kafrul', 'Agargaon', 'Tongi_West', 'Rupnagor', 'Shahali', 'Pallabi', 'Dakshinkhan'][:-1]
 # usable_zones = list(filter(lambda x: x not in discard_zones, all_zones))
-month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October',
-               'November', 'December']
-monthColors = ["#8fcadd"] * 2 + ["#46d246"] * 3 + ["#ff0000"] * 3 + ["#ffa500"] * 3 + ["#8fcadd"]
-monthcolorDict = dict(zip(month_names, monthColors))
+
+
 pal = ['#F70D1A', '#2B3856', '#C35817', '#B2C248', '#3BB9FF', '#893BFF', '#7D0541', '#F3E5AB', '#C12869', '#BCC6CC',
        '#8AFB17', '#348781', '#C7A317', '#EDE275', '#C6AEC7']
 
@@ -41,6 +34,7 @@ def readCSVca(path, fName):
     df = pd.read_csv(path + fName, encoding='cp1252')  # alternative "ISO-8859-1"
     df.apply(uniques)
     print(df.ZONE.value_counts())
+
 
 def PaymentTimingDistrict():
     # all = []
@@ -78,15 +72,14 @@ def PaymentTimingDistrict():
 
 
 def PaymentTimingWithUsage():
-    mainpath, ts, dl = '/home/az/PycharmProjects/ML/Electricity/Data Directory/', 'DESCO Data Timeseries/', 'DESCO Data Delay/'
     alldlq, allTs = [], []
     for zone in usable_zones:
         print(zone)
-        df = pd.read_csv(mainpath + dl + zone, index_col='ACC_NUMBER', low_memory=False).T.fillna(0)['2009':'2014']
+        df = pd.read_csv(dl_path + zone, index_col='ACC_NUMBER', low_memory=False).T.fillna(0)['2009':'2014']
         dlqncy = (df.apply(lambda x: 'Regular' if (x >= 0).all() else 'Late' if (x >= -30).all() else 'Skip'))
         alldlq.append(dlqncy)
 
-        df = pd.read_csv(mainpath + ts + zone, index_col='ACC_NUMBER', low_memory=False).T['2009':'2014']
+        df = pd.read_csv(ts_path + zone, index_col='ACC_NUMBER', low_memory=False).T['2009':'2014']
         bins = np.array([0, 100, 200, 300, 400, 500, 600, 10000])
         freqs = pd.cut(df.apply(lambda x: x.mean()), bins)
         allTs.append(freqs)
@@ -116,7 +109,6 @@ def PaymentTimingWithUsage():
 
 
 def LatePaymentDistrictUsage():
-    mainpath, ts, dl = '/home/az/PycharmProjects/ML/Electricity/Data Directory/', 'DESCO Data Timeseries/', 'DESCO Data Delay/'
     # alldlq = []
     # for zone in zones:
     #     print(zone)
@@ -160,17 +152,14 @@ def daysDelayFrequency(df):
     fig.show()
 
 
-def getAlldf():
-    dfs = [processTS(mainpath + tsPath + zone) for zone in usable_zones]
-    return pd.concat(dfs, axis=1)
+
 
 
 def DataCleaning():
-    # for zone in os.listdir(mainpath + rawPath):
-    for zone in all_zones[3:4]:
+    for zone in all_zones:
         print(zone)
         cols = ['ACC_NUMBER', 'MONTH', 'YEAR', 'UNIT', 'COLLECTION_DATE', 'DUE_DATE']
-        df = pd.read_csv(mainpath + rawPath + zone + '/' + XBa2i, usecols=cols, parse_dates=[4, 5]).dropna()
+        df = pd.read_csv(rawdataPath + zone + '/' + XBa2i, usecols=cols, parse_dates=[4, 5]).dropna()
         # print(df.columns)
         df['Bill_Month'] = pd.to_datetime(df[['YEAR', 'MONTH']].assign(DAY=1))
         df['Day_Difference'] = (df['DUE_DATE'] - df['COLLECTION_DATE']).dt.days.astype('int16')
@@ -184,16 +173,7 @@ def DataCleaning():
         # createAndSaveTimeSeries(df[['ACC_NUMBER', 'Bill_Month', 'Day_Difference']], mainpath + dlPath + zone)
 
 
-def SeasonalBoxplot(alldf):
-    monthlyAverage = alldf.groupby(alldf.index.strftime('%B')).mean().reindex(month_names, axis=0)
-    print(monthlyAverage)
 
-    fig = go.Figure()
-    for i, row in monthlyAverage.iterrows(): fig.add_trace(
-        go.Box(y=monthlyAverage.loc[i], name=i, marker_color=monthcolorDict[i], legendgroup=monthcolorDict[i]))
-    fig.update_layout(title='Seasonal usage of electricity', yaxis_title="Unit",
-                      xaxis_title="Month of Year", legend_orientation="h")
-    fig.show()
 
 
 def UserGroups(df, title):
@@ -222,7 +202,7 @@ def UsageBarChart(usageGroup):
 
 
 def FilterLTA(df, zone):
-    mt = pd.read_csv(mainpath + rawPath + zone + '/' + XCa2i, encoding='cp1252').dropna()
+    mt = pd.read_csv(rawdataPath + zone + '/' + XCa2i, encoding='cp1252').dropna()
     mtLTA = mt[(mt['CATEGORY'] == 'LT') & (mt['TARIFF'] == 'A')]['ACC_NUMBER'].astype(int).values.astype('str')
     return df.filter(items=mtLTA)
 
@@ -230,7 +210,7 @@ def FilterLTA(df, zone):
 def TimeSeriesZone():
     fig = go.Figure()
     for i, zone in enumerate(all_zones):
-        df = processTS(mainpath + tsPath + zone)
+        df = read_time_series_data(mainpath + ts_path + zone)
         df = FilterLTA(df, zone)
         # fig.add_trace(go.Scatter(x=df.index, y=df.mean(axis=1), mode='lines+markers', name=zone, marker_color=pal[i]))
         fig.add_trace(go.Scatter(x=df.index, y=df.mean(axis=1), mode='lines+markers', name=zone))
@@ -254,31 +234,40 @@ def ViolinPLot(usageGroup):
 
 
 if __name__ == '__main__':
+    for zone in all_zones[:]:
+        df1 = read_time_series_data(ts_path + zone)['2013':'2016']
+        df1 = FilterLTA(df1,zone)
+        # dfm = pd.read_csv(f'/home/asif/Datasets/Electricity/DESCO data/raw data/{zone}/XCa2i.csv', encoding='cp1252')
+        df1.to_csv(mergePath+zone)
+
+        print(zone)
+        # print(df1)
+        # print(dfm.shape)
+        # print(dfm.groupby(['CATEGORY'])['ACC_NUMBER'].count())
+        # PlotUsageTimeseries(df1, zone)
+    exit()
+
     usable_zones = all_zones[1:2]
-    dfs = [pd.read_csv(mainpath + tsPath + zone, index_col='Time') for zone in usable_zones]
+    dfs = [pd.read_csv(mainpath + ts_path + zone, index_col='Time') for zone in usable_zones]
     PlotUsageTimeseries(dfs[0], usable_zones[0])
 
     exit()
-    # df = pd.read_csv('/media/az/Study/Datasets/Electricity/DESCO data/DESCO Data Timeseries/Agargaon',index_col='UNIT',parse_dates=[0])
-    # print(df)
 
     # DataCleaning()
     # TimeSeriesZone()
-
-    # alldf = pd.concat([processTS(mainpath + tsPath + zone).mean(axis=1) for zone in zones], axis=1)
     # SeasonalBoxplot(alldf)
+    # ViolinPLot(usageGroup)
+    # PaymentTimingDistrict()
+    # PaymentTimingWithUsage()
+    # LatePaymentDistrictUsage()
 
     usageGroup = pd.concat(
-        [UserGroups(FilterLTA(processTS(mainpath + tsPath + zone), zone), zone) for i, zone in enumerate(usable_zones)],
+        [UserGroups(FilterLTA(read_time_series_data(ts_path + zone), zone), zone) for i, zone in
+         enumerate(usable_zones)],
         axis=1)
     # usageGroup = pd.concat([UserGroups(processTS(mainpath + tsPath + zone),zone) for i, zone in enumerate(zonesall)],
     #                        axis=1)
     # UsageBarChart(usageGroup)
-    ViolinPLot(usageGroup)
-
-    # PaymentTimingDistrict()
-    # PaymentTimingWithUsage()
-    # LatePaymentDistrictUsage()
 
     # alldf = alldf.loc[:, (alldf < 10000).all(axis=0)]
     exit()

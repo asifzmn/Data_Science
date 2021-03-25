@@ -1,20 +1,19 @@
 import os
+from collections import Counter
 from datetime import datetime, timedelta
 import time
-from os import listdir
 from os.path import isfile, join
-
 from pandas_profiling import ProfileReport
-
-from AirQuality.DataPreparation import LoadMetadata
+from os import listdir
+from AirQuality.DataPreparation import *
 from timeit import default_timer as timer
 import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
 import xarray as xr
 
-attribSel = ['Relative Humidity  [2 m above gnd]', 'Temperature  [2 m above gnd]', 'Wind Gust  [sfc]',
-             'Total Cloud Cover  [sfc]', 'Sunshine Duration  [sfc]']
+from AirQuality.Visualization_Modules import SimpleTimeseries
+
 
 factors = ['Temperature [2 m]', 'Relative Humidity [2 m]', 'Mean Sea Level Pressure', 'Precipitation',
            'Cloud Cover High', 'Cloud Cover Medium', 'Cloud Cover Low', 'Sunshine Duration', 'Shortwave Radiation',
@@ -25,6 +24,19 @@ factors = ['Temperature [2 m]', 'Relative Humidity [2 m]', 'Mean Sea Level Press
            'Temperature [850 mb]', 'Temperature [700 mb]', 'Surface Temperature', 'Soil Temperature [0-10 cm down]',
            'Soil Moisture [0-10 cm down]']
 
+factors =['Temperature [2 m elevation corrected]', 'Relative Humidity [2 m]',
+       'Mean Sea Level Pressure [MSL]', 'Precipitation Total',
+       'Cloud Cover High [high cld lay]', 'Cloud Cover Medium [mid cld lay]',
+       'Cloud Cover Low [low cld lay]', 'Sunshine Duration',
+       'Shortwave Radiation', 'Direct Shortwave Radiation',
+       'Diffuse Shortwave Radiation', 'Wind Gust', 'Wind Speed [10 m]',
+       'Wind Direction [10 m]', 'Wind Speed [80 m]', 'Wind Direction [80 m]',
+       'Wind Speed [900 mb]', 'Wind Direction [900 mb]', 'Wind Speed [850 mb]',
+       'Wind Direction [850 mb]', 'Wind Speed [700 mb]',
+       'Wind Direction [700 mb]', 'Wind Speed [500 mb]',
+       'Wind Direction [500 mb]', 'Temperature [1000 mb]',
+       'Temperature [850 mb]', 'Temperature [700 mb]', 'Temperature',
+       'Soil Temperature [0-10 cm down]', 'Soil Moisture [0-10 cm down]']
 
 def WindDirFactors():
     windDirNames = np.array(
@@ -61,14 +73,6 @@ def PrepareMeteoData2(file):
 def PrepareMeteoDatatime(file): return pd.to_datetime(pd.read_csv(file, sep=',', skiprows=9)['timestamp'])
 
 
-def PrepareMeteoData1(file):
-    meteoInfo = pd.read_csv(file, sep=',', skiprows=9).replace(-999, 0)
-    meteoInfo.drop(['timestamp'], axis=1, inplace=True)
-    meteoInfo = meteoInfo.apply(pd.to_numeric)
-    meteoInfo.iloc[:, 1] = meteoInfo.iloc[:, 1] / 100
-    return meteoInfo.values
-
-
 def MeteoTimeSeries(meteoData, factorname, unit, colors):
     fig = go.Figure()
     windDirNames = WindDirFactors()[0]
@@ -81,23 +85,34 @@ def MeteoTimeSeries(meteoData, factorname, unit, colors):
     # fig.update_layout(title_text='Time Series with Rangeslider',xaxis_rangeslider_visible=True)
     fig.show()
 
+def PrepareMeteoData(file,district):
+    meteoInfo = pd.read_csv(file, sep=',', skiprows=9).replace(-999, 0)
+    meteoInfo.drop(['timestamp'], axis=1, inplace=True)
+    meteoInfo = meteoInfo.apply(pd.to_numeric)
 
-def oneFolder(locationMain, folders):
-    time = pd.to_datetime(folders.split(' to '))
+    meteoInfo.columns = meteoInfo.columns.str.split(" ",len(district.split(' '))).str[-1]
+    meteoInfo = meteoInfo[factors]
+
+    meteoInfo.iloc[:, 1] = meteoInfo.iloc[:, 1] / 100
+    return meteoInfo.values
+
+
+def oneFolder(locationMain, date_folder):
+    time = pd.to_datetime(date_folder.split(' to '))
     time = pd.date_range(start=time.min(), end=time.max() + timedelta(days=1), freq='H')[:-1]
 
     meteoData = np.array(
-        [PrepareMeteoData1(locationMain + '/' + folders + '/' + district + '.csv') for district in metaFrame.index])
+        [PrepareMeteoData(f'{locationMain}/{date_folder}/{district}.csv',district) for district in metaFrame.index])
     return xr.DataArray(data=meteoData,
                         coords={"district": metaFrame.index.values, "time": time, "factor": factors},
                         dims=["district", "time", "factor"], name='meteo')
 
 
 def GetAllMeteoData():
-    locationMain = '/media/az/Study/Air Analysis/Dataset/Meteoblue Scrapped Data'
-    return xr.merge([oneFolder(locationMain, folders) for folders in listdir(locationMain)[:]])
-    # for folders in listdir(locationMain)[:3]:
-    #     print(oneFolder(locationMain, folders))
+    locationMain = meteoblue_data_path + 'Meteoblue Scrapped Data'
+    return xr.merge([oneFolder(locationMain, date_folder) for date_folder in listdir(locationMain)[:]])
+    # for date_folder in listdir(locationMain)[:3]:
+    #     print(oneFolder(locationMain, date_folder))
 
 
 def PlotlyRosePlot(info, colorPal, alldistricts):
@@ -173,7 +188,7 @@ def oneFolderAnother(locationMain, folders):
     time = pd.date_range(start=time.min(), end=time.max() + timedelta(days=1), freq='H')[:-1]
 
     meteoData = np.array(
-        [PrepareMeteoData1(locationMain + '/' + folders + '/' + district + '.csv') for district in metaFrame.index])
+        [PrepareMeteoData(locationMain + '/' + folders + '/' + district + '.csv') for district in metaFrame.index])
 
     return xr.DataArray(data=meteoData,
                         coords={"district": metaFrame.index.values, "time": time, "factor": factors},
@@ -182,8 +197,8 @@ def oneFolderAnother(locationMain, folders):
 
 def getFactorData(meteoData, factor):
     return meteoData.sel(factor=factor).to_dataframe().drop('factor',
-                                                                                              axis=1).unstack().T.droplevel(
-    level=0)
+                                                            axis=1).unstack().T.droplevel(
+        level=0)
 
 
 if __name__ == '__main__':
@@ -202,12 +217,18 @@ if __name__ == '__main__':
     # print(meteoData.loc[:,'2020-07-02':'2020-07-05',['Temperature [2 m]','Precipitation']])
     # print(meteoData.sel(factor='Temperature [2 m]'))
 
-    factor = 'Temperature [2 m]'
+    # factor = 'Temperature [2 m elevation corrected]'
+    sampleFactors = ['Wind Gust', 'Wind Speed [10 m]', 'Wind Direction [10 m]', 'Temperature [2 m elevation corrected]', 'Relative Humidity [2 m]']
+    for sampleFactor in sampleFactors:
+        getFactorData(meteoData, sampleFactor)['2020'].to_csv(sampleFactor+'.csv')
+
+    factor = factors[-3]
     df = getFactorData(meteoData, factor)
     print(df)
     print(df.index)
     print(df.columns)
 
+    # SimpleTimeseries(df)
     # print(meteoData.to_dataframe())
 
     # print(meteoData.loc['Azimpur'].to_dataframe(name='value'))

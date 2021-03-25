@@ -1,10 +1,7 @@
-import os
-import pandas as pd
-from AirQuality.AQ_Analysis import PLotlyTimeSeries
-from Electricity.ElecCommon import PlotUsageTimeseries, createAndSaveTimeSeries
+from Electricity.ElecCommon import *
 
-mainpath = '/media/az/Study/Datasets/Electricity/DPDC data/'
-segmentDirectory, unitDirectory = mainpath + 'District Data/segments', mainpath + 'District Data/units'
+mainpath = '/home/asif/Datasets/Electricity/DPDC data/'
+segmentDirectory, unitDirectory = mainpath + 'District Data/segments/', mainpath + 'District Data/units/'
 
 zones = ['ADABOR', 'NARINDA', 'AZIMPUR', 'TEJGAON', 'FATEULLAH', 'PARIBAG', 'KHILGAON', 'N.GONJ (EAST)', 'SHYAMOLI',
          'KAKRAIL', 'KAZLA', 'RAJARBAG', 'MATUAIL', 'POSTOGOLA', 'MANIKNAGAR', 'BANGSHAL', 'DEMRA', 'KAMRANGIRCHAR',
@@ -15,7 +12,10 @@ zones = ['ADABOR', 'NARINDA', 'AZIMPUR', 'TEJGAON', 'FATEULLAH', 'PARIBAG', 'KHI
 damaged = ['ADABOR', 'AZIMPUR', 'KHILGAON', 'N.GONJ (EAST)', 'SHYAMOLI', 'MATUAIL', 'N.GONJ (WEST)', 'SHITALOKKHYA',
            'SIDDIRGONJ', 'MUGDAPARA', 'SATMASJID', 'BASHABO']
 
-cleanZones = list(filter(lambda x: x not in damaged, zones))
+damaged1 = ['DEMRA', 'AZIMPUR', 'KHILGAON', 'N.GONJ (EAST)', 'SHYAMOLI', 'N.GONJ (WEST)', 'SHITALOKKHYA',
+            'SATMASJID', 'BASHABO']
+
+cleanZones = list(filter(lambda x: x not in damaged1, zones))
 
 
 def basicInfo(df):
@@ -35,7 +35,7 @@ def MonthlyUsage(predataNOCS):
     df.to_csv('Data Directory/NOCSELEC.csv')
 
 
-def preparedistrictData2013_2016():
+def preparedistrictData2013_2018():
     # dflarges = pd.read_csv(mainpath + '2012-2016-kwh.csv', header=0,
     #                         low_memory=False, chunksize=4 * 10 ** 6)
     #
@@ -48,9 +48,10 @@ def preparedistrictData2013_2016():
         ZoneDataList = []
         for i in range(16):
             file = os.path.join(segmentDirectory, str(i) + '/' + zone)
+            print(file)
             if os.path.exists(file): ZoneDataList.append(pd.read_csv(file, parse_dates=[1]))
         df = pd.concat(ZoneDataList).drop_duplicates(['CUSTOMER_NUM', 'MONTH'])
-        createAndSaveTimeSeries(df[['CUSTOMER_NUM', 'MONTH', 'KWH']], unitDirectory + "/" + zone)
+        create_save_time_series(df[['CUSTOMER_NUM', 'MONTH', 'KWH']], unitDirectory + zone)
         print(df)
 
 
@@ -60,23 +61,19 @@ def preparedistrictData2017_2019():
                               low_memory=False)
     print(predataNOCS.dtypes)
     print(predataNOCS['NOCS'].unique())
-    createAndSaveTimeSeries(predataNOCS[['CUSTOMER_NUM', 'MONTH', 'KWH']], 'DPDC')
+    create_save_time_series(predataNOCS[['CUSTOMER_NUM', 'MONTH', 'KWH']], 'DPDC')
     df = pd.read_csv('DPDC', index_col='CUSTOMER_NUM', low_memory=False).T
     PlotUsageTimeseries(df, 'DPDC')
 
 
-def UsageTS():
-    for i, zone in enumerate(zones[30:]):
-        df = pd.read_csv(unitDirectory + "/" + zone, index_col='CUSTOMER_NUM').T
-        df.index = pd.to_datetime(df.index)
-        PlotUsageTimeseries(df, zone)
+
 
 
 def prepareforNTLFebruaryOnly():
     lst = []
 
     for zone in cleanZones:
-        df = pd.read_csv(unitDirectory + "/" + zone, index_col='CUSTOMER_NUM').T
+        df = pd.read_csv(unitDirectory  + zone, index_col='CUSTOMER_NUM').T
         df.index = pd.to_datetime(df.index)
         df = df[df.index.month == 2].mean(axis=1)
         # print(zone, df.isnull().any())
@@ -90,7 +87,7 @@ def prepareforNTLFebruaryOnly():
 def prepareforNTLYear():
     lst = []
     for zone in zones[:]:
-        df = pd.read_csv(unitDirectory + "/" + zone, index_col='CUSTOMER_NUM').T
+        df = pd.read_csv(unitDirectory + zone, index_col='CUSTOMER_NUM').T
         df.index = pd.to_datetime(df.index)
         lst.append(df['2018'].median(axis=1))
 
@@ -102,9 +99,10 @@ def prepareforNTLYear():
 
 
 if __name__ == '__main__':
-    # preparedistrictData2013_2016()
+    UsageTS()
+    # preparedistrictData2013_2018()
     # preparedistrictData2017_2019()
-    prepareforNTLYear()
+    # prepareforNTLYear()
 
     exit()
     # customerLoc = pd.read_csv('/media/az/Study/Datasets/Electricity/DPDC Azimpur Data/azimpur.csv', sep=',', skiprows=0)

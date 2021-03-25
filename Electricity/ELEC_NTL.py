@@ -33,29 +33,37 @@ def Choropleth(df):
 
 
 if __name__ == '__main__':
+
+    dfNTL = pd.read_csv('/home/asif/Work/Projects/NTL Docs/nocsNTL.csv', index_col='NOCS').drop(['Started', 'type'], axis=1).astype(
+        'float64').T
     # dfElec = pd.read_csv('Data Directory/NOCSELEC2.csv', index_col='MONTH')
-    dfElec = pd.read_csv('/media/az/Study/Datasets/Electricity/Data Directory/NOCSELEC3.csv', index_col='Unnamed: 0', parse_dates=[0])
-    dfElec.rename(
-        columns={'Azimpur': 'AZIMPUR', 'SHAMOLY': 'SHYAMOLI', 'SHERE-B-NAGAR': 'SHERE B.NAGAR', 'Lalbag': 'LALBAG'},
-        inplace=True)
-    dfNTL = pd.read_csv('/media/az/Study/Datasets/Electricity/Data Directory/NOCSNTL.csv', index_col='NOCS').drop(['Started', 'type'], axis=1).astype(
-        'float64')
+    # dfElec = pd.read_csv('/media/az/Study/Datasets/Electricity/Data Directory/NOCSELEC3.csv', index_col='Unnamed: 0', parse_dates=[0])
+    # dfElec.rename(
+    #     columns={'Azimpur': 'AZIMPUR', 'SHAMOLY': 'SHYAMOLI', 'SHERE-B-NAGAR': 'SHERE B.NAGAR', 'Lalbag': 'LALBAG'},
+    #     inplace=True)
+    # dfNTL = dfNTL.T[dfElec.columns].astype('float64')
+
+
     # dfNTL = dfNTL[dfNTL.columns.drop(list(dfNTL.filter(regex='variance')))]
-    dfNTL = dfNTL.T[dfElec.columns].astype('float64')
     # dfNTL = dfNTL.T.loc[['2018_sum', '2019_sum']][dfElec.columns].astype('float64')
     # dfNTLsum,dfNTLmean = dfNTL.iloc[1::3],dfNTL.iloc[2::3]
+
     dfNTLsum, dfNTLmean = dfNTL.iloc[19::3], dfNTL.iloc[20::3]
     # dfNTLsum.index,dfNTLmean.index = pd.to_datetime(dfNTLsum.index.str[:4]),pd.to_datetime(dfNTLmean.index.str[:4])
     dfNTLsum.index, dfNTLmean.index = pd.to_datetime(dfNTLsum.index.str[:10]), pd.to_datetime(dfNTLmean.index.str[:10])
-    # print(dfNTLsum)
-    # print(dfNTLmean)
+    print(dfNTLsum)
+    print(dfNTLmean)
     # print(dfElec)
+
+    dfNTLsum.to_csv('NOCS_NTL_sum_2018.csv')
+    dfNTLmean.to_csv('NOCS_NTL_mean_2018.csv')
 
     # print(dfNTLsum,dfNTLmean)
 
     # PLotlyTimeSeries(dfElec)
     # PLotlyTimeSeries(dfNTLsum)
     # PLotlyTimeSeries(dfNTLmean)
+    exit()
 
     sumCorr, meanCorr = dfElec.corrwith(dfNTLsum, axis=0), dfElec.corrwith(dfNTLmean, axis=0)
     sumCorr, meanCorr = sumCorr.round(3), meanCorr.round(3)

@@ -1,5 +1,6 @@
 from datetime import datetime, timedelta
-from os.path import join
+from os import listdir
+from os.path import join, isfile
 from urllib.request import urlopen
 import pandas as pd
 import numpy as np
@@ -9,16 +10,18 @@ import pandas as pd
 [Year, Month, Day, UTC_Hour, PM25, PM10_mask, Retrospective] = range(7)
 discard = 'Azimpur,Bhola,Patiya,Laksham,Netrakona,Madaripur,Ishurdi,Pabna,Tungipara,Ramganj,Raipur,Palang,Sherpur,Nagarpur,Sarishabari,Shahzadpur,Pirojpur,Maulavi_Bazar,Habiganj,Bhairab_Bazar,Sandwip,Satkania,Rangpur,Khagrachhari,Lakshmipur,Jamalpur,Saidpur,Chittagong,Lalmanirhat,Thakurgaon,Sylhet,Dinajpur'.split(
     ',')
-aq_directory = '/home/asif/Work/Air Analysis/'
-mainPath = '/media/az/Study/Air Analysis/Dataset/Berkely Earth Data/'
-datadir = '/home/asif/Work/Air Analysis/Data Directory/'
+
+aq_directory = '/home/asif/Work/Air Analysis/AQ Dataset/'
+berkely_earth_data = aq_directory + 'Berkely Earth Data/'
+berkely_earth_data_prepared = berkely_earth_data + 'prepared/'
+meteoblue_data_path = aq_directory + 'Meteoblue Scrapped Data/'
 
 
-def getCommonID(id=1): return ['selected', 'all', 'SouthAsianCountries'][id]
+def getCommonID(id=0): return ['all', 'SouthAsianCountries', 'allbd'][id]
 
 
 def getZones(): return pd.read_csv(
-    mainPath + 'Zones/' + getCommonID() + '.csv')
+    berkely_earth_data + 'zones/' + getCommonID() + '.csv')
 
 
 def getCategoryInfo():
@@ -43,7 +46,7 @@ def getCommonTimes(allDistrictData, timeKey):
                  'yearmonthdayhour': (Year, UTC_Hour, '%Y-%m-%d-%H')}[timeKey]
     datetimes = np.array(
         [[datetime.strptime('-'.join(map(str, x)), timeScale[2]) for x in d[:, timeScale[0]:timeScale[1] + 1]] for d in
-         allDistrictData])
+         allDistrictData], dtype='object')
 
     # for a,d in zip(allDistrictMetaData[:, 0],datetimes):print(a,len(np.unique(TimetoString(d,timeScale))))
     sortedCommonTime = np.array(sorted(set.intersection(*map(set, [[x for x in d] for d in datetimes]))))
@@ -76,22 +79,17 @@ def getCommonTimes(allDistrictData, timeKey):
                                         allDistrictData]))
 
 
-def getAllData(locationMain, update=False):
+def getAllData(locationMain, update=True):
     # allFiles = [f[:-4] for f in listdir(locationMain) if isfile(join(locationMain, f))]
-    # allFiles = [f for f in listdir(locationMain) if isfile(join(locationMain, f)) and f[:-4] not in discard]
     allDistrictData, allDistrictMetaData = [], []
 
     for idx, row in getZones().sort_values('Zone', ascending=True).iterrows():
         print(row)
         file = join(locationMain + getCommonID(), row['Zone'] + '.txt')
         if update:
-            # data = [line.decode('unicode_escape')[:-1] for line in urlopen(
-            #     join('http://berkeleyearth.lbl.gov/air-quality/maps/cities/' + row['Country'].replace(' ', '_') + '/',
-            #          join(row['Division'].replace(' ', '_'), row['Zone'].replace(' ', '_') + '.txt')))]
-
             data = [line.decode('unicode_escape')[:-1] for line in urlopen(
                 join('http://berkeleyearth.lbl.gov/air-quality/maps/cities/' + row['Country'] + '/',
-                     join(row['Division'], row['Zone'] + '.txt')))]
+                     join(row['Division'].replace(' ', '_'), row['Zone'].replace(' ', '_') + '.txt')))]
 
             with open(file, 'w') as r:
                 r.write('\n'.join(map(str, data)))
@@ -107,19 +105,20 @@ def getAllData(locationMain, update=False):
         allDistrictMetaData.append(districtMetaData)
         allDistrictData.append(districtData)
 
-    return np.array(allDistrictData), np.array(allDistrictMetaData)[:, [2, 4, 5, 6, 7]]
+    return np.array(allDistrictData, dtype='object'), np.array(allDistrictMetaData)[:, [2, 4, 5, 6, 7]]
 
 
 def LoadData():
-    fname = datadir + getCommonID() + '/reading.pickle'
+    fname = berkely_earth_data + 'prepared/' + getCommonID() + '/reading.pickle'
     basicTimeParameters = np.array(
         ['year', 'month', 'day', 'hour', 'yearmonthday', 'yearmonthdayhour'])
 
     try:
+        raise
         with open(fname, "rb") as f:
             dataSummaries, allDistrictMetaData = pk.load(f)
     except:
-        allDistrictData, allDistrictMetaData = getAllData(mainPath + 'Data/')
+        allDistrictData, allDistrictMetaData = getAllData(berkely_earth_data + 'raw/')
         # dataSummaries = [getCommonTimes(allDistrictData, timeParam) for timeParam in basicTimeParameters]
         dataSummaries = getCommonTimes(allDistrictData, basicTimeParameters[-1])
         with open(fname, "wb") as f:
@@ -133,7 +132,7 @@ def LoadData():
 
 
 def LoadSeries(data=None, name='reading'):
-    fname = datadir + getCommonID() + '/timeseries'
+    fname = berkely_earth_data_prepared + getCommonID() + '/timeseries'
     if data is not None:
         metaFrame = LoadMetadata()
         df = pd.DataFrame(data=np.transpose(data[1]), index=data[0],
@@ -142,12 +141,13 @@ def LoadSeries(data=None, name='reading'):
         df = df[sorted(df.columns.values)]
         df.to_feather(fname)
 
-    # return pd.read_feather(fname).set_index('index', drop=True)['2017':]
-    return pd.read_feather(fname).set_index('index', drop=True)['2017':].rename(columns={'Azimpur': 'Dhaka'}).sort_index(axis=1)
+    return pd.read_feather(fname).set_index('index', drop=True)['2017':]
+    # return pd.read_feather(fname).set_index('index', drop=True)['2017':].rename(
+    #     columns={'Azimpur': 'Dhaka'}).sort_index(axis=1)
 
 
 def LoadMetadata(allDistrictMetaData=None):
-    metadataFileName = datadir + getCommonID() + '/metadata'
+    metadataFileName = berkely_earth_data_prepared + getCommonID() + '/metadata'
     if allDistrictMetaData is not None:
         metaFrame = pd.DataFrame(columns=['Zone', 'Division', 'Population', 'Latitude', 'Longitude'],
                                  data=allDistrictMetaData).sort_values('Zone')
@@ -155,15 +155,41 @@ def LoadMetadata(allDistrictMetaData=None):
             pd.to_numeric).round(5)
         metaFrame.to_feather(metadataFileName)
 
-    # return pd.read_feather(metadataFileName).set_index('Zone', drop=True)
-    return pd.read_feather(metadataFileName).set_index('Zone', drop=True).rename(index={'Azimpur': 'Dhaka'}).sort_index(axis = 0)
+    return pd.read_feather(metadataFileName).set_index('Zone', drop=True)
+    # return pd.read_feather(metadataFileName).set_index('Zone', drop=True).rename(index={'Azimpur': 'Dhaka'}).sort_index(
+    #     axis=0)
+
+
+def makeHeaderFile(metaFrame):
+    metaFrame = metaFrame.assign(Country='Bangladesh')
+    metaFrame = metaFrame.reset_index()[['Country', 'Division', 'Zone']]
+    metaFrame.to_csv('headerFile.csv', index=False)
+
+
+def allZoneRead():
+    alldatapath = berkely_earth_data + 'total/'
+    allFiles = [alldatapath + f for f in listdir(alldatapath)]
+    allDistrictMetaData = []
+
+    for file in allFiles:
+        data = str(open(file, 'rb').read().decode('unicode_escape')).split("\n")
+        allDistrictMetaData.append(np.array([d.split(':')[1][1:-1] for d in data[:9]]))
+
+    allDistrictMetaData = pd.DataFrame(np.array(allDistrictMetaData)[:, [4, 2]], columns=['Division', 'Zone']).assign(
+        Country='Bangladesh')
+    allDistrictMetaData = allDistrictMetaData[['Country', 'Division', 'Zone']]
+    allDistrictMetaData.to_csv(berkely_earth_data + 'zones/allbd.csv', index=False)
+
+
+
 
 
 if __name__ == '__main__':
-    dataSummaries = LoadData()
-    seies = LoadSeries()
+    # dataSummaries = LoadData()
+    timeseies = LoadSeries()
     metaFrame = LoadMetadata()
-    print(metaFrame)
+
+
     # for i in range(len(dataSummaries[1])): print(metaFrame.iloc[i, 0],
     #                                                  np.count_nonzero(dataSummaries[1][i] == None))
     # deviatedList = sorted((np.std(dataSummaries[-1][1], axis=0)).argsort()[-27 * 15:][::-1])

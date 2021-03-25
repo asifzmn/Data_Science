@@ -94,10 +94,10 @@ def Arrows(ax, vec):
             # head_width=.033, head_length=0.081, length_includes_head=True, zorder=0, color = 'grey',ls = '-')
 
 
-def setMap(x=1.5):
+def setMap(x=2):
     plt.rcParams['figure.figsize'] = (8 * x, 10 * x)
     # df_admin = gpd.read_file('/media/az/Study/Air Analysis/Maps/districts.geojson')
-    df_admin = gpd.read_file(aq_directory+'Maps/districts.geojson')
+    df_admin = gpd.read_file(aq_directory + 'Maps/districts.geojson')
     return df_admin.plot(color='#E5E4E2', edgecolor='#837E7C')
 
 
@@ -113,14 +113,16 @@ def MapScatter(ax, data=None):
     # ax.scatter(x=data.Longitude.astype('float64'), y=data.Latitude.astype('float64'), zorder=1, alpha=1,
     #            c=data.color, s=150, marker='H', edgecolor='#3D3C3A', linewidth=1)
 
-    for idx,row in data.iterrows():
+    for idx, row in data.iterrows():
+        marker_size, marker_color, = 150, '#566D7E'
+        if idx in ['Sirajganj', 'Jessore', 'Dhaka']: marker_size, marker_color = 450,'#5b567e'
         ax.scatter(x=row.Longitude, y=row.Latitude, zorder=1, alpha=1,
-                   c='#566D7E',s=300, marker=row.symbol, edgecolor='#3D3C3A', linewidth=1)
+                   c=marker_color, s=marker_size, marker=row.symbol, edgecolor='#3D3C3A', linewidth=1)
 
 
 def MapLegend(ax, legendData):
     # lines = [Line2D([0], [0], color=c, linewidth=5, linestyle='-') for c in legendData[1].color]
-    lines = [Line2D([], [], color='#566D7E',marker=s,linestyle='None',markersize=15) for s in legendData[1].symbol]
+    lines = [Line2D([], [], color='#566D7E', marker=s, linestyle='None', markersize=15) for s in legendData[1].symbol]
     ax.legend(lines, legendData[1].category, loc='lower left', prop={'size': 15}, title=legendData[0])
 
 

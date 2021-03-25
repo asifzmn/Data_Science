@@ -1,0 +1,8 @@
+<body onload="initialize()">
+  <h3>Drag or re-shape for coordinates to display below (<a href="https://github.com/jeremy-hawes/google-maps-coordinates-polygon-tool" target="_blank">Github</a>)</h3>
+  <h3><a href="https://codepen.io/jhawes/blog/creating-a-real-estate-polygon-tool">See blog post</a></h3>
+  <div id="map-canvas"></div>
+  <div class="lngLat"><span class="one">Lat</span><span class="two">,Lng</span></div>
+</body>
+<button id="clipboard-btn" onclick="copyToClipboard(document.getElementById('info').innerHTML)">Copy to Clipboard</button>
+<textarea id="info"></textarea>

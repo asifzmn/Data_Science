@@ -103,10 +103,15 @@ def pltSetUpAx(ax, xlabel=None, ylabel=None, title=None, xlim=None, ylim=None, s
 
 
 def SimpleTimeseries(df):
-    resampled_df = df.resample('2W')
+    resampled_df = df.resample('M')
+    # resampled_df = df.resample('D')
     aggregated_value = pd.concat(
         [sampledSeries.stack().apply(['min', 'mean', 'median', 'max']) for _, sampledSeries in resampled_df], axis=1).T
     aggregated_value.index = [time for time, _ in resampled_df]
+    aggregated_value = aggregated_value
+    # aggregated_value = aggregated_value.iloc[:-1]
+    print(aggregated_value.to_string())
+    aggregated_value.to_csv('aggregated_value.csv')
 
     fig = go.Figure()
 
@@ -127,6 +132,17 @@ def SimpleTimeseries(df):
         x=aggregated_value.index.tolist(), y=aggregated_value['median'].tolist(),
         line_color='rgb(255, 216, 1)', line_width=5, name='Median',
     ))
+
+    # # annotate_points = ['2017-01-01', '2018-01-14', '2019-01-13', '2017-07-02', '2018-07-15', '2019-07-14']
+    # annotate_points = ['2017-01-31', '2018-01-31', '2019-01-31', '2017-07-31', '2018-07-31', '2019-07-31']
+    # # annotate_points = ['2017-01-31', '2018-01-31', '2019-01-31', '2017-07-31', '2018-07-31', '2019-07-31','2017-12-31', '2018-12-31', '2019-12-31']
+    # for annotate_point in annotate_points:
+    #     print(aggregated_value.loc[annotate_point, 'median'])
+    #     fig.add_annotation(x=annotate_point, y=aggregated_value.loc[annotate_point, 'median'],
+    #                        text=aggregated_value.loc[annotate_point, 'median'])
+
+    fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='#E5E4E2')
+    fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='#E5E4E2')
 
     fig.update_traces(mode='lines')
     fig.update_layout(
@@ -168,6 +184,7 @@ def MissingDataHeatmap(df):
         )
     )
     fig.show()
+
 
 def ViolinPLot(df):
     fig = go.Figure()
@@ -211,7 +228,6 @@ def ColorTable():
     fig.update_layout(width=666)
 
     fig.show()
-
 
 
 if __name__ == '__main__':

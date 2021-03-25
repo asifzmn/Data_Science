@@ -14,10 +14,10 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 from time import sleep
 
-from AirQuality.DataPreparation import LoadMetadata
+from AirQuality.DataPreparation import *
 
 
-def Scrap():
+def Scrap(savePath):
     list = ['Temperature [1000 hPa]', 'Temperature [850 hPa]', 'Temperature [700 hPa]', 'Wind speed [80 m]',
             'Wind gusts [10 m]', 'Wind speed and direction [900 hPa]', 'Wind speed and direction [850 hPa]',
             'Wind speed and direction [700 hPa]', 'Wind speed and direction [500 hPa]',
@@ -25,11 +25,11 @@ def Scrap():
             'Precipitation amount', 'Low, mid and high cloud cover', 'Pressure [mean sea level]',
             'Surface skin temperature', 'Soil temperature [0-10 cm down]', 'Soil moisture [0-10 cm down]']
 
-    lastDate, oneDay = datetime.strptime(listdir(savePath)[-1].split(' to ')[1], '%Y-%m-%d').date(), timedelta(days=1)
+    lastDate, oneDay = datetime.strptime(max(listdir(savePath)).split(' to ')[1], '%Y-%m-%d').date(), timedelta(days=1)
     datePoints = str(lastDate + oneDay) + ' to ' + str(date.today() - oneDay)
     targetPath = savePath + datePoints
-    # targetPath = savePath + '1datePoints'
-    if not os.path.exists(targetPath): os.makedirs(targetPath)
+
+    gecko_path = "/home/asif/Work/Firefox Web Driver/geckodriver.exe"
 
     profile = FirefoxProfile()
     profile.set_preference('browser.download.folderList', 2)
@@ -38,9 +38,13 @@ def Scrap():
     profile.set_preference('browser.download.dir', targetPath)
     # profile.set_preference('browser.helperApps.neverAsk.saveToDisk', 'text/plain')
     profile.set_preference('browser.helperApps.neverAsk.saveToDisk', 'text/csv')
+    # profile.set_preference('browser.helperApps.neverAsk.saveToDisk', 'application/octet-stream')
+
+    # profile.set_preference("browser.helperApps.alwaysAsk.force", False)
+    # profile.set_preference("browser.download.manager.showWhenStarting",False)
+
     profile.set_preference('general.warnOnAboutConfig', False)
     profile.update_preferences()
-    gecko_path = "/media/az/Study/Firefox Web Driver/geckodriver.exe"
     # path = "/media/az/Study/FFWD/Mozilla Firefox/firefox.exe"
     # binary = FirefoxBinary(path)
     driver = Firefox(firefox_profile=profile, executable_path=gecko_path)
@@ -48,6 +52,7 @@ def Scrap():
 
     driver.find_element_by_id("gdpr_form").click()
 
+    if not os.path.exists(targetPath): os.makedirs(targetPath)
     start = timer()
     for index, row in metaFrame.iterrows():
         print(row)
@@ -77,6 +82,7 @@ def Scrap():
         driver.find_element_by_name("submit_csv").click()
         # filename = max([targetPath + "/" + f for f in os.listdir(targetPath)], key=os.path.getctime)
         # shutil.move(filename, os.path.join(targetPath, index + '.csv'))
+        time.sleep(1)
         print(timer() - start)
 
     time.sleep(15)
@@ -109,8 +115,10 @@ def Update():
 if __name__ == '__main__':
     metaFrame = LoadMetadata()
     runningPath = '/media/az/Study/Air Analysis/AirQuality Dataset/MeteoblueJuly'
-    savePath = '/media/az/Study/Air Analysis/AQ Dataset/Meteoblue Scrapped Data/'
-    runningPathcp, savePathcp = runningPath + " (copy)", savePath + " (copy)"
 
-    Scrap()
+    # Scrap(meteoblue_data_path)
+    # df = pd.read_excel('/home/asif/Work/Air Analysis/AQ Dataset/Meteoblue Scrapped Data/2021-03-08 to 2021-03-22/Azimpur.xlsx',engine='openpyxl',header=9)
+    df = open('/home/asif/Work/Air Analysis/AQ Dataset/Meteoblue Scrapped Data/2021-03-08 to 2021-03-22/Azimpur.xlsx','rb').read().decode(
+                    'unicode_escape')
+    print(df)
     exit()

@@ -50,6 +50,7 @@ def ProfileReport(timeseries, name='AirQuality'):
     prof = ProfileReport(timeseries, minimal=False, title=name)
     prof.to_file(output_file=name + '.html')
 
+
 def ExtremeCorrelation(df):
     corrDistrict = np.corrcoef(np.transpose(df.to_numpy()))
     correlatedDistricts = (np.transpose(np.where(corrDistrict > 0.999)))
@@ -63,12 +64,6 @@ def LatexTableFormat(df):
     new_df = df.groupby([df.index.year]).agg(['min', 'mean', 'max'])
     new_df.index.set_names(['Year'], inplace=True)
     print(new_df.T.to_latex(col_space=3))
-
-
-def makeHeaderFile(metaFrame):
-    metaFrame = metaFrame.assign(Country='Bangladesh')
-    metaFrame = metaFrame.reset_index()[['Country', 'Division', 'Zone']]
-    metaFrame.to_csv('headerFile.csv', index=False)
 
 
 def HeatMapDriver(data, vmin, vmax, title, cmap):
@@ -389,7 +384,7 @@ def CorrationSeasonal(corrArray, rows=2, cols=2, title=''):
                                                y=meta_data.index.to_list()[::-1], x=meta_data.index.to_list(),
                                                annotation_text=np.flip(np.tril(
                                                    np.absolute(np.random.randint(3, size=(
-                                                   timeseries.shape[1], timeseries.shape[1])))),
+                                                       timeseries.shape[1], timeseries.shape[1])))),
                                                    0), colorscale='purpor', zmin=0, zmax=1)
             fig.add_trace(fig1.dataset[0], i + 1, j + 1)
 
@@ -459,14 +454,13 @@ def StackedBar(df):
     fig = go.Figure(data=datas)
     fig.update_layout(
         legend_orientation="h",
-        font=dict(size=21),
+        font=dict(size=24),
         barmode='stack',
-        template='plotly_white'
+        template='plotly_white',
+        legend={"x" : 0, "y" : -.3}
     )
 
     fig.show()
-
-
 
 
 def LatexFormatting(stats):
@@ -624,6 +618,7 @@ def LatexFormatting(stats):
     # print(df.to_markdown())
     # print(df.to_html())
 
+
 def CrossCorrelation(df):
     def HeatmapCrossCorr(df):
         plt.figure(figsize=(9, 9))
@@ -670,28 +665,34 @@ def CrossCorrelation(df):
         if df.nunique() > 1:
             print(key)
             if key == '2019-01-27 to 2019-02-01' or key == '2019-10-26 to 2019-10-31':
-                print(df[df!=0])
-                df[df!=0].to_csv(key+'.csv')
+                print(df[df != 0])
+                df[df != 0].to_csv(key + '.csv')
                 HeatmapCrossCorr(df.unstack())
                 mapArrow(metaFrame, df.unstack(), df.name)
 
-
+def save_data():
+    meta_data, timeseries = LoadMetadata(), LoadSeries()['2017':'2019']
+    meta_data.to_csv('zone_data.csv')
+    timeseries.to_csv('pm_time_series.csv')
 
 
 if __name__ == '__main__':
     plt.close("all")
     sns.set()
+    save_data()
     # sns.set_style("whitegrid")
     meta_data, timeseries = LoadMetadata(), LoadSeries()['2017':'2019']
 
-    # SimpleTimeseries(df)
-    # StackedBar(df)
+    SimpleTimeseries(timeseries)
+    # exit()
+
+    # StackedBar(timeseries)
 
     # df.describe().T.to_csv('GenralStats.csv')
 
     # cross_corr_columns = ['Nawabganj','Sherpur','Kishorganj','Kushtia','Nagarpur','Narsingdi','Satkhira','Pirojpur','Lakshmipur']
     # CrossCorrelation(timeseries[cross_corr_columns])
-    CrossCorrelation(timeseries)
+    # CrossCorrelation(timeseries)
     # PaperComparision()
 
     # CityAnalysis(df['Dhaka']['2017'])
