@@ -27,9 +27,11 @@ def Scrap(savePath):
 
     lastDate, oneDay = datetime.strptime(max(listdir(savePath)).split(' to ')[1], '%Y-%m-%d').date(), timedelta(days=1)
     datePoints = str(lastDate + oneDay) + ' to ' + str(date.today() - oneDay)
+    datePointsupdate = str(lastDate + oneDay) + ' - ' + str(date.today() - oneDay)
     targetPath = savePath + datePoints
 
-    gecko_path = "/home/asif/Work/Firefox Web Driver/geckodriver.exe"
+    # gecko_path = "/home/asif/Work/Firefox Web Driver/geckodriver.exe"
+    gecko_path = "/media/az/Study/Work/Firefox Web Driver/geckodriver.exe"
 
     profile = FirefoxProfile()
     profile.set_preference('browser.download.folderList', 2)
@@ -77,15 +79,15 @@ def Scrap(savePath):
 
         datePicker = driver.find_element_by_id('daterange')
         datePicker.clear()
-        datePicker.send_keys(datePoints + Keys.RETURN)
+        datePicker.send_keys(datePointsupdate + Keys.RETURN)
 
         driver.find_element_by_name("submit_csv").click()
         # filename = max([targetPath + "/" + f for f in os.listdir(targetPath)], key=os.path.getctime)
         # shutil.move(filename, os.path.join(targetPath, index + '.csv'))
-        time.sleep(1)
+        time.sleep(3)
         print(timer() - start)
 
-    time.sleep(15)
+    time.sleep(30)
     for file, zone in zip(sorted(Path(targetPath).iterdir(), key=os.path.getmtime), metaFrame.index.values):
         shutil.move(file, os.path.join(targetPath, zone + '.csv'))
 
@@ -116,9 +118,10 @@ if __name__ == '__main__':
     metaFrame = LoadMetadata()
     runningPath = '/media/az/Study/Air Analysis/AirQuality Dataset/MeteoblueJuly'
 
-    # Scrap(meteoblue_data_path)
+    Scrap(meteoblue_data_path)
+
     # df = pd.read_excel('/home/asif/Work/Air Analysis/AQ Dataset/Meteoblue Scrapped Data/2021-03-08 to 2021-03-22/Azimpur.xlsx',engine='openpyxl',header=9)
-    df = open('/home/asif/Work/Air Analysis/AQ Dataset/Meteoblue Scrapped Data/2021-03-08 to 2021-03-22/Azimpur.xlsx','rb').read().decode(
-                    'unicode_escape')
-    print(df)
+    # df = open('/home/asif/Work/Air Analysis/AQ Dataset/Meteoblue Scrapped Data/2021-03-08 to 2021-03-22/Azimpur.xlsx','rb').read().decode(
+    #                 'unicode_escape')
+    # print(df)
     exit()
