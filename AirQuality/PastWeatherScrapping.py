@@ -1,22 +1,4 @@
-from time import sleep
-from selenium.webdriver import FirefoxProfile, Firefox
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support import expected_conditions
-from selenium.webdriver.support.wait import WebDriverWait
 from selenium import webdriver
-import chromedriver_binary
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.common.action_chains import ActionChains
-import numpy as np
-import pandas as pd
-from timeit import default_timer as timer
-from sklearn.utils.extmath import cartesian
-from AirQuality.DataPreparation import LoadMetadata, LoadSeries
-import plotly.express as px
-from http_request_randomizer.requests.proxy.requestProxy import RequestProxy
-import urllib.request
-import socket
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC

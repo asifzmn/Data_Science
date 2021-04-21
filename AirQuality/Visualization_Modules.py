@@ -28,12 +28,13 @@ def PairDistributionSummary(timeseries, samplingHours=1):
     timeseries['daytime'] = np.tile(
         np.hstack((np.repeat('Day', 12 // samplingHours), np.repeat('Night', 12 // samplingHours))),
         ((timeseries.shape[0] * samplingHours) // 24))
+    print(timeseries)
 
     timeseries = timeseries.sort_values(by=['daytime'], ascending=False)
     g = sns.pairplot(timeseries, hue='daytime', palette=["#2B3856", "#FFF380"], plot_kws={"s": 9})
 
-    for ax in plt.gcf().axes: ax.set_xlabel(ax.get_xlabel(), fontsize=30)
-    for ax in plt.gcf().axes: ax.set_ylabel(ax.get_ylabel(), fontsize=30)
+    for ax in plt.gcf().axes: ax.set_xlabel(ax.get_xlabel(), fontsize=15)
+    for ax in plt.gcf().axes: ax.set_ylabel(ax.get_ylabel(), fontsize=15)
 
     g.fig.get_children()[-1].set_bbox_to_anchor((1.1, 0.5, 0, 0))
     plt.show()
@@ -87,7 +88,7 @@ def pltSetUp(xlabel=None, ylabel=None, title=None, xlim=None, ylim=None, save=No
         plt.clf()
 
 
-def pltSetUpAx(ax, xlabel=None, ylabel=None, title=None, xlim=None, ylim=None, save=None):
+def pltSetUpAx(ax, xlabel=None, ylabel=None, title=None, xlim=None, ylim=None, save='Save'):
     if not xlabel is None: ax.set_xlabel(xlabel)
     if not ylabel is None: ax.set_ylabel(ylabel)
     if not title is None: ax.set_title(title)
@@ -234,4 +235,5 @@ if __name__ == '__main__':
     plt.close("all")
     # sns.set()
     # # sns.set_style("whitegrid")
-    # metaFrame, df = LoadMetadata(), LoadSeries()['2017':'2019']
+    metaFrame, series = LoadMetadata(), LoadSeries()['2017':'2019']
+    BoxPlotHour(series)

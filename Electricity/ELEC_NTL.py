@@ -1,9 +1,6 @@
 import pandas as pd
-import numpy as np
 import json
-from AirQuality.AQ_Analysis import PLotlyTimeSeries
 import plotly.express as px
-import plotly.graph_objects as go
 
 
 def Choropleth(df):

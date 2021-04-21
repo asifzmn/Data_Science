@@ -1,11 +1,11 @@
 import re
 import geojsoncontour
 from collections import Counter
+from sklearn.cluster import KMeans
 from itertools import combinations
 from plotly.subplots import make_subplots
 from scipy.spatial.distance import cdist
 from pandas_profiling import ProfileReport
-from sklearn.cluster import KMeans
 from AirQuality.CoronaBeforeAfter import GroupedBox
 from AirQuality.GeoMapPlotly import SliderMapCommon
 from AirQuality.Correlation_Measures import *
@@ -18,6 +18,163 @@ import more_itertools
 
 colorScale, categoryName, AQScale = getCategoryInfo()
 save = '/home/az/Pictures/'
+
+
+def LatexFormatting(stats):
+    # stats['count'] = stats['count'].astype('int')
+
+    # stats = stats.iloc[:,[0,1,2,3,5,7]].round(1)
+
+    latexData = stats.to_latex(col_space=3).replace("\\\n", "\\ \hline\n").replace('\\toprule',
+                                                                                   '\\toprule\n\\hline')
+    substring = latexData[
+                latexData.index('\\begin{tabular}{') + len('\\begin{tabular}{') - 1:latexData.index('}\n') + 1]
+    latexData = latexData.replace(substring, '|'.join(substring))
+
+    for axisName in stats.columns: latexData = latexData.replace(axisName, f"\\textbf{{{axisName}}}")
+    # for axisName in stats.index: latexData = latexData.replace(axisName, f"\\textbf{{{axisName}}}")
+
+    latexData = latexData.replace('25\%', "\\textbf{Q1}").replace('50\%', "\\textbf{Q2}").replace('75\%',
+                                                                                                  "\\textbf{Q3}")
+    latexData = latexData.replace('{Tungi}para', "{Tungipara}")
+
+    print(latexData)
+
+    # BoxPlotYear(df)
+
+    # MissingDataHeatmap(df)
+    # BoxPlotDistrict(df)
+    # MeteoAnalysis(df)
+
+    # df = df.fillna(df.rolling(6, min_periods=1, ).mean()).round(3)
+
+    # PLotlyTimeSeries(df[[cols]],missing[[cols]])
+    # PLotlyTimeSeries(missing[[cols]],missing)
+
+    # df = df.apply(FillMissingDataFromHours, args=[2])
+    # df = df.apply(FillMissingDataFromDays, args=[3])
+    # df = df.apply(FillMissingDataFromYears)
+
+    # dfm = GetAllMeteoData()
+
+    # SliderMapCommon(df['2017':'2020'], metaFrame, ['Y', '%Y %B'])
+    # SliderMapCommon(df['2020'], metaFrame, ['D', '%Y %B %D'],True)
+
+    # for freq,data in df['2020'].resample('W').mean().iterrows():
+    #     print(data)
+    #     mapPlot(data,str(freq))
+
+    # changePoints = np.hstack((([0],np.argwhere(np.diff((df.notnull().all(axis=1)).values)).squeeze(),[df.shape[0]-1]))).reshape(-1,2)
+    # # print((changePoints[:,1]-changePoints[:,0])/(24*30))
+    # cleanData = (changePoints[(changePoints[:,1]-changePoints[:,0])/(24*30)>1])
+    # for cl in cleanData:print(df.index[cl[0]],df.index[cl[1]-1])
+
+    # for cols in df.columns.values:
+    #     days = 7
+    #     ss = [df[cols].shift(shft, freq='H') for shft in np.delete(np.arange(-days,days+1), [-3+7,-2+7,-1+7,0+7,1+7,2+7,3+7])*24]
+    #     df[cols] = df[cols].fillna((pd.concat(ss, axis=1).mean(axis=1)))
+
+    # MissingBar(df)
+
+    # corrArray = np.array([df['2017-12':'2017-12'].corr().values,
+    #                       df['2018-03':'2018-03'].corr().values,
+    #                       df['2018-06':'2018-06'].corr().values,
+    #                       df['2018-09':'2018-09'].corr().values]).reshape((2, 2, df.shape[1], df.shape[1]))
+    # CorrationSeasonal(corrArray)
+    #
+    # corrArray = np.array([df['2018-01':'2018-01'].corr().values,
+    #                       df['2018-04':'2018-04'].corr().values,
+    #                       df['2018-07':'2018-07'].corr().values,
+    #                       df['2018-10':'2018-10'].corr().values]).reshape((2, 2, df.shape[1], df.shape[1]))
+    # CorrationSeasonal(corrArray)
+    #
+    #
+    # corrArray = np.array([df['2018-02':'2018-02'].corr().values,
+    #                       df['2018-05':'2018-05'].corr().values,
+    #                       df['2018-08':'2018-08'].corr().values,
+    #                       df['2018-11':'2018-11'].corr().values]).reshape((2, 2, df.shape[1], df.shape[1]))
+    # CorrationSeasonal(corrArray)
+    #
+    # corrArray = np.array([df['2017-12':'2018-02'].corr().values,
+    #                       df['2018-03':'2018-05'].corr().values,
+    #                       df['2018-06':'2018-08'].corr().values,
+    #                       df['2018-09':'2018-11'].corr().values]).reshape((2, 2, df.shape[1], df.shape[1]))
+    # CorrationSeasonal(corrArray)
+
+    # corrArray = (np.array([[df['2017-'+str(month+1)].corr().values] for month in range(12)]).reshape((6, 2, df.shape[1], df.shape[1])))
+    # CorrationSeasonal(corrArray,rows=6,title = '2017')
+    #
+    # corrArray = (np.array([[df['2018-'+str(month+1)].corr().values] for month in range(12)]).reshape((6, 2, df.shape[1], df.shape[1])))
+    # CorrationSeasonal(corrArray,rows=6,title = '2018')
+    #
+    # corrArray = (np.array([[df['2019-'+str(month+1)].corr().values] for month in range(12)]).reshape((6, 2, df.shape[1], df.shape[1])))
+    # CorrationSeasonal(corrArray,rows=6,title = '2019')
+
+    # [yearData, monthData, weekData, dayData] = [
+    #     np.array([[timeDel, timeStamp, reading] for timeStamp, reading in
+    #               df.groupby(pd.Grouper(freq=timeDel)) if not reading.isnull().any().any()], dtype=object) for timeDel
+    #     in
+    #     (['Y', 'M', 'W', '3D'])]
+    # readings = dayData
+    # print(len(readings))
+    #
+    # totalEstimate = []
+    # for i, [timeDel, timeStamp, reading] in enumerate(readings[:]):
+    #     print(i, timeStamp)
+    #     # ratioMapPlotting(reading)
+    #     # BoxPlotHour(reading)
+    #     l1, l2 = CrossCorr(timeDel, timeStamp, reading, lagRange=2)
+    #     totalEstimate.extend(l2)
+    #     # BoxPlotSeason(reading)
+    #     # BoxPlot(reading)
+    #     # TriangularHeatmap(timeStamp,reading.astype('float64'))
+    # # WindGraphTeamEstimate(np.array(totalEstmare), ['Overall'])
+
+    # for dis1 in metaFrame.index.values:
+    #     for dis2 in metaFrame.index.values:
+    #         lagRange = 3
+    #         rs = [crosscorr(df[dis1], df[dis2], lag) for lag in range(-lagRange, 0)]
+    #         offset = - int(np.floor(len(rs) / 2) - np.argmax(rs))
+    #         if offset<0:
+    #             print(offset)
+    #             print(angleFromCoordinate(dis1, dis2))
+
+    # SliderMapCommon(df, metaFrame, ['M', '%Y %B'])
+    # PLotlyTimeSeries(df)
+    # SliderMapCommon(df, metaFrame, ['M', '%Y %B'])
+    # MeteoAnalysis(df)
+
+    # df = df.resample('3D').max()
+    # plt.figure(figsize=(9, 6))
+    # ax = sns.boxplot(data=df.T, color="blue")
+    # pltSetUpAx(ax, "Hour of Day", "PM Reading", 'district' + ' in ' + str('timeStamp'), ylim=(0, 500))
+    # # pltSetUpAx(ax, "Hour of Day", "PM Reading", 'district' + ' in ' + str('timeStamp'))
+
+    # # b = np.array([0, 4, 8, 12, 16, 20, 24])
+    # b = np.array([pd.to_datetime(0, format='%H'), pd.to_datetime(12, format='%H')])
+    # # l = ['Late Night', 'Early Morning', 'Morning', 'Noon', 'Eve', 'Night']
+    # l = ['Day',  'Night']
+    # df1['session'] = pd.cut(df.index, bins=b, labels=l)
+
+    # MapPlotting(metaFrame, df[date].mean().values,vec=lagMatrix)
+    # TriangularHeatmap(df)
+    # SeasonalDecomposition(monthData[-1][2].iloc[:,3])
+
+    # print([df1[2].mean().mean() for df1 in yearData])
+    # popYear = [157977153, 159685424, 161376708, 163046161]
+    # print(np.corrcoef([df1[2].mean().mean() for df1 in yearData][1:],popYear[1:]))
+    # print(metaFrame[['Population','avgRead']].corr())
+
+    # data.resample('S', fill_method='pad')  # forming a series of seconds
+
+    # MissingDataHeatmap(df)
+    # StackedBar(df)
+    # BoxPlotDistrict(df, '')
+    # for label, content in df.items():print(label,content)
+
+    # print(df.to_markdown())
+    # print(df.to_html())
+
 
 
 def diurnality(x):
@@ -46,12 +203,12 @@ def PaperComparision():
     LatexFormatting(paperData)
 
 
-def ProfileReport(timeseries, name='AirQuality'):
-    prof = ProfileReport(timeseries, minimal=False, title=name)
+def MakeProfileReport(timeseries, name='AirQuality'):
+    prof = MakeProfileReport(timeseries, minimal=False, title=name)
     prof.to_file(output_file=name + '.html')
 
 
-def ExtremeCorrelation(df):
+def extreme_correlation(df):
     corrDistrict = np.corrcoef(np.transpose(df.to_numpy()))
     correlatedDistricts = (np.transpose(np.where(corrDistrict > 0.999)))
     identity = np.transpose([np.arange(len(df)), np.arange(len(df))])
@@ -315,7 +472,7 @@ def WindGraphTeamEstimate(meteoData, alldis):
 
 
 def MeteoAnalysis(df):
-    meteoData = xr.open_dataset('meteoData.nc')['meteo']
+    meteoData = xr.open_dataset('Files/meteoData.nc')['meteo']
 
     factors, districts = pd.Series(
         ['Temperature [2 m]', 'Relative Humidity [2 m]', 'Mean Sea Level Pressure', 'Precipitation',
@@ -439,184 +596,31 @@ def BoxPlotWeek(df):
 def cutAndCount(x): return pd.cut(x, AQScale, labels=categoryName).value_counts() / x.count()
 
 
-def StackedBar(df):
-    df = df.apply(cutAndCount)
+def StackedBar(timeseries):
+    ranking = Ranking(timeseries)
+    category_frquency = timeseries.apply(cutAndCount)
+    category_frquency = category_frquency[ranking.index]
 
-    # df = df.T
-    # df['grp'] = df['Hazardous'] + df['Very Unhealthy'] + df['Unhealthy']
-    # df['grp'] = df['Good'] + df['Moderate'] + df['Unhealthy for Sensitive Groups']
-    # df = df.sort_values(by=['grp']).T
-    # df = df.drop('grp')
+    # category_frquency = category_frquency.T
+    # category_frquency['grp'] = category_frquency['Hazardous'] + category_frquency['Very Unhealthy'] + category_frquency['Unhealthy']
+    # category_frquency['grp'] = category_frquency['Good'] + category_frquency['Moderate'] + category_frquency['Unhealthy for Sensitive Groups']
+    # category_frquency = category_frquency.sort_values(by=['grp']).T
+    # category_frquency = category_frquency.drop('grp')
 
-    datas = [go.Bar(x=df.columns.values, y=row,
+    datas = [go.Bar(x=category_frquency.columns.values, y=row,
                     marker_color=colorScale[categoryName.tolist().index(idx)],
-                    name=idx, opacity=.666) for idx, row in df.iterrows()]
+                    name=idx, opacity=.666) for idx, row in category_frquency.iterrows()]
     fig = go.Figure(data=datas)
     fig.update_layout(
         legend_orientation="h",
         font=dict(size=24),
         barmode='stack',
         template='plotly_white',
-        legend={"x" : 0, "y" : -.3}
+        legend={"x": 0, "y": -.3}
     )
 
     fig.show()
 
-
-def LatexFormatting(stats):
-    # stats['count'] = stats['count'].astype('int')
-
-    # stats = stats.iloc[:,[0,1,2,3,5,7]].round(1)
-
-    latexData = stats.to_latex(col_space=3).replace("\\\n", "\\ \hline\n").replace('\\toprule',
-                                                                                   '\\toprule\n\\hline')
-    substring = latexData[
-                latexData.index('\\begin{tabular}{') + len('\\begin{tabular}{') - 1:latexData.index('}\n') + 1]
-    latexData = latexData.replace(substring, '|'.join(substring))
-
-    for axisName in stats.columns: latexData = latexData.replace(axisName, f"\\textbf{{{axisName}}}")
-    # for axisName in stats.index: latexData = latexData.replace(axisName, f"\\textbf{{{axisName}}}")
-
-    latexData = latexData.replace('25\%', "\\textbf{Q1}").replace('50\%', "\\textbf{Q2}").replace('75\%',
-                                                                                                  "\\textbf{Q3}")
-    latexData = latexData.replace('{Tungi}para', "{Tungipara}")
-
-    print(latexData)
-
-    # BoxPlotYear(df)
-
-    # MissingDataHeatmap(df)
-    # BoxPlotDistrict(df)
-    # MeteoAnalysis(df)
-
-    # df = df.fillna(df.rolling(6, min_periods=1, ).mean()).round(3)
-
-    # PLotlyTimeSeries(df[[cols]],missing[[cols]])
-    # PLotlyTimeSeries(missing[[cols]],missing)
-
-    # df = df.apply(FillMissingDataFromHours, args=[2])
-    # df = df.apply(FillMissingDataFromDays, args=[3])
-    # df = df.apply(FillMissingDataFromYears)
-
-    # dfm = GetAllMeteoData()
-
-    # SliderMapCommon(df['2017':'2020'], metaFrame, ['Y', '%Y %B'])
-    # SliderMapCommon(df['2020'], metaFrame, ['D', '%Y %B %D'],True)
-
-    # for freq,data in df['2020'].resample('W').mean().iterrows():
-    #     print(data)
-    #     mapPlot(data,str(freq))
-
-    # changePoints = np.hstack((([0],np.argwhere(np.diff((df.notnull().all(axis=1)).values)).squeeze(),[df.shape[0]-1]))).reshape(-1,2)
-    # # print((changePoints[:,1]-changePoints[:,0])/(24*30))
-    # cleanData = (changePoints[(changePoints[:,1]-changePoints[:,0])/(24*30)>1])
-    # for cl in cleanData:print(df.index[cl[0]],df.index[cl[1]-1])
-
-    # for cols in df.columns.values:
-    #     days = 7
-    #     ss = [df[cols].shift(shft, freq='H') for shft in np.delete(np.arange(-days,days+1), [-3+7,-2+7,-1+7,0+7,1+7,2+7,3+7])*24]
-    #     df[cols] = df[cols].fillna((pd.concat(ss, axis=1).mean(axis=1)))
-
-    # MissingBar(df)
-
-    # corrArray = np.array([df['2017-12':'2017-12'].corr().values,
-    #                       df['2018-03':'2018-03'].corr().values,
-    #                       df['2018-06':'2018-06'].corr().values,
-    #                       df['2018-09':'2018-09'].corr().values]).reshape((2, 2, df.shape[1], df.shape[1]))
-    # CorrationSeasonal(corrArray)
-    #
-    # corrArray = np.array([df['2018-01':'2018-01'].corr().values,
-    #                       df['2018-04':'2018-04'].corr().values,
-    #                       df['2018-07':'2018-07'].corr().values,
-    #                       df['2018-10':'2018-10'].corr().values]).reshape((2, 2, df.shape[1], df.shape[1]))
-    # CorrationSeasonal(corrArray)
-    #
-    #
-    # corrArray = np.array([df['2018-02':'2018-02'].corr().values,
-    #                       df['2018-05':'2018-05'].corr().values,
-    #                       df['2018-08':'2018-08'].corr().values,
-    #                       df['2018-11':'2018-11'].corr().values]).reshape((2, 2, df.shape[1], df.shape[1]))
-    # CorrationSeasonal(corrArray)
-    #
-    # corrArray = np.array([df['2017-12':'2018-02'].corr().values,
-    #                       df['2018-03':'2018-05'].corr().values,
-    #                       df['2018-06':'2018-08'].corr().values,
-    #                       df['2018-09':'2018-11'].corr().values]).reshape((2, 2, df.shape[1], df.shape[1]))
-    # CorrationSeasonal(corrArray)
-
-    # corrArray = (np.array([[df['2017-'+str(month+1)].corr().values] for month in range(12)]).reshape((6, 2, df.shape[1], df.shape[1])))
-    # CorrationSeasonal(corrArray,rows=6,title = '2017')
-    #
-    # corrArray = (np.array([[df['2018-'+str(month+1)].corr().values] for month in range(12)]).reshape((6, 2, df.shape[1], df.shape[1])))
-    # CorrationSeasonal(corrArray,rows=6,title = '2018')
-    #
-    # corrArray = (np.array([[df['2019-'+str(month+1)].corr().values] for month in range(12)]).reshape((6, 2, df.shape[1], df.shape[1])))
-    # CorrationSeasonal(corrArray,rows=6,title = '2019')
-
-    # [yearData, monthData, weekData, dayData] = [
-    #     np.array([[timeDel, timeStamp, reading] for timeStamp, reading in
-    #               df.groupby(pd.Grouper(freq=timeDel)) if not reading.isnull().any().any()], dtype=object) for timeDel
-    #     in
-    #     (['Y', 'M', 'W', '3D'])]
-    # readings = dayData
-    # print(len(readings))
-    #
-    # totalEstimate = []
-    # for i, [timeDel, timeStamp, reading] in enumerate(readings[:]):
-    #     print(i, timeStamp)
-    #     # ratioMapPlotting(reading)
-    #     # BoxPlotHour(reading)
-    #     l1, l2 = CrossCorr(timeDel, timeStamp, reading, lagRange=2)
-    #     totalEstimate.extend(l2)
-    #     # BoxPlotSeason(reading)
-    #     # BoxPlot(reading)
-    #     # TriangularHeatmap(timeStamp,reading.astype('float64'))
-    # # WindGraphTeamEstimate(np.array(totalEstmare), ['Overall'])
-
-    # for dis1 in metaFrame.index.values:
-    #     for dis2 in metaFrame.index.values:
-    #         lagRange = 3
-    #         rs = [crosscorr(df[dis1], df[dis2], lag) for lag in range(-lagRange, 0)]
-    #         offset = - int(np.floor(len(rs) / 2) - np.argmax(rs))
-    #         if offset<0:
-    #             print(offset)
-    #             print(angleFromCoordinate(dis1, dis2))
-
-    # SliderMapCommon(df, metaFrame, ['M', '%Y %B'])
-    # PLotlyTimeSeries(df)
-    # SliderMapCommon(df, metaFrame, ['M', '%Y %B'])
-    # MeteoAnalysis(df)
-
-    # df = df.resample('3D').max()
-    # plt.figure(figsize=(9, 6))
-    # ax = sns.boxplot(data=df.T, color="blue")
-    # pltSetUpAx(ax, "Hour of Day", "PM Reading", 'district' + ' in ' + str('timeStamp'), ylim=(0, 500))
-    # # pltSetUpAx(ax, "Hour of Day", "PM Reading", 'district' + ' in ' + str('timeStamp'))
-
-    # # b = np.array([0, 4, 8, 12, 16, 20, 24])
-    # b = np.array([pd.to_datetime(0, format='%H'), pd.to_datetime(12, format='%H')])
-    # # l = ['Late Night', 'Early Morning', 'Morning', 'Noon', 'Eve', 'Night']
-    # l = ['Day',  'Night']
-    # df1['session'] = pd.cut(df.index, bins=b, labels=l)
-
-    # MapPlotting(metaFrame, df[date].mean().values,vec=lagMatrix)
-    # TriangularHeatmap(df)
-    # SeasonalDecomposition(monthData[-1][2].iloc[:,3])
-
-    # print([df1[2].mean().mean() for df1 in yearData])
-    # popYear = [157977153, 159685424, 161376708, 163046161]
-    # print(np.corrcoef([df1[2].mean().mean() for df1 in yearData][1:],popYear[1:]))
-    # print(metaFrame[['Population','avgRead']].corr())
-
-    # data.resample('S', fill_method='pad')  # forming a series of seconds
-
-    # MissingDataHeatmap(df)
-    # StackedBar(df)
-    # BoxPlotDistrict(df, '')
-    # for label, content in df.items():print(label,content)
-
-    # print(df.to_markdown())
-    # print(df.to_html())
 
 
 def CrossCorrelation(df):
@@ -637,7 +641,7 @@ def CrossCorrelation(df):
         ser, ser.name = newdf.stack(), x.name
         return ser
 
-    pth = datadir
+    pth = berkely_earth_data
     window, step, lag = 5, 2, 3
     fileName, indices, freq = 'lagTimeMatrix_', ['Leader', 'Date', 'Follower'], str(window) + 'D'
 
@@ -670,20 +674,37 @@ def CrossCorrelation(df):
                 HeatmapCrossCorr(df.unstack())
                 mapArrow(metaFrame, df.unstack(), df.name)
 
+
 def save_data():
     meta_data, timeseries = LoadMetadata(), LoadSeries()['2017':'2019']
     meta_data.to_csv('zone_data.csv')
     timeseries.to_csv('pm_time_series.csv')
 
+def Ranking(timeseries):
+    return timeseries.mean().sort_values()
+
+def changes(timeseries):
+    print(timeseries.resample('Y').median().diff().to_string())
 
 if __name__ == '__main__':
     plt.close("all")
     sns.set()
-    save_data()
+    # save_data()
     # sns.set_style("whitegrid")
-    meta_data, timeseries = LoadMetadata(), LoadSeries()['2017':'2019']
+    # meta_data, timeseries = LoadMetadata(), LoadSeries()['2017':'2019']
+    meta_data, timeseries = LoadMetadata(), ReadPandasCSV()
 
-    SimpleTimeseries(timeseries)
+    # allData = df.stack()
+    # print(allData.describe())
+
+    changes(timeseries)
+
+    # timeseries = timeseries['2018-04']
+    # SimpleTimeseries(timeseries)
+    # print(Ranking(timeseries))
+    # StackedBar(timeseries)
+    # PairDistributionSummary(timeseries.iloc[:,:])
+    # MissingDataHeatmap(timeseries)
     # exit()
 
     # StackedBar(timeseries)

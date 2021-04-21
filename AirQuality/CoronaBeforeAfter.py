@@ -1,5 +1,5 @@
-
-
+import pandas as pd
+import plotly.graph_objects as go
 from AirQuality.DataPreparation import LoadMetadata, LoadSeries
 
 
@@ -31,5 +31,5 @@ if __name__ == '__main__':
     metaFrame, df = LoadMetadata(), LoadSeries()
     print(metaFrame)
 
-    # df[['Dhaka']].apply(GroupedBox)
-    df.resample('6H').mean().apply(GroupedBox)
+    df[['Dhaka']].apply(GroupedBox)
+    # df.resample('6H').mean().apply(GroupedBox)

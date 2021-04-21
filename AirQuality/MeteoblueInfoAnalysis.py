@@ -207,7 +207,7 @@ if __name__ == '__main__':
     # meteoData = GetAllMeteoData()
     # meteoData.to_netcdf('meteoData.nc')
 
-    meteoData = xr.open_dataset('meteoData.nc')['meteo']
+    meteoData = xr.open_dataset('Files/meteoData.nc')['meteo']
 
     # print(meteoData)
     # print(meteoData.shape)

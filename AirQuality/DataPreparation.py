@@ -15,13 +15,14 @@ aq_directory = '/home/asif/Work/Air Analysis/AQ Dataset/'
 berkely_earth_data = aq_directory + 'Berkely Earth Data/'
 berkely_earth_data_prepared = berkely_earth_data + 'prepared/'
 meteoblue_data_path = aq_directory + 'Meteoblue Scrapped Data/'
+raw_data_path = berkely_earth_data + 'raw/'
 
 
 def getCommonID(id=0): return ['all', 'SouthAsianCountries', 'allbd'][id]
 
 
 def getZones(): return pd.read_csv(
-    berkely_earth_data + 'zones/' + getCommonID() + '.csv')
+    berkely_earth_data + 'zones/' + getCommonID() + '.csv').sort_values('Zone', ascending=True)
 
 
 def getCategoryInfo():
@@ -79,13 +80,13 @@ def getCommonTimes(allDistrictData, timeKey):
                                         allDistrictData]))
 
 
-def getAllData(locationMain, update=True):
+def getAllData(update=True):
     # allFiles = [f[:-4] for f in listdir(locationMain) if isfile(join(locationMain, f))]
     allDistrictData, allDistrictMetaData = [], []
 
-    for idx, row in getZones().sort_values('Zone', ascending=True).iterrows():
+    for idx, row in getZones().iterrows():
         print(row)
-        file = join(locationMain + getCommonID(), row['Zone'] + '.txt')
+        file = join(raw_data_path + getCommonID(), row['Zone'] + '.txt')
         if update:
             data = [line.decode('unicode_escape')[:-1] for line in urlopen(
                 join('http://berkeleyearth.lbl.gov/air-quality/maps/cities/' + row['Country'] + '/',
@@ -118,7 +119,7 @@ def LoadData():
         with open(fname, "rb") as f:
             dataSummaries, allDistrictMetaData = pk.load(f)
     except:
-        allDistrictData, allDistrictMetaData = getAllData(berkely_earth_data + 'raw/')
+        allDistrictData, allDistrictMetaData = getAllData()
         # dataSummaries = [getCommonTimes(allDistrictData, timeParam) for timeParam in basicTimeParameters]
         dataSummaries = getCommonTimes(allDistrictData, basicTimeParameters[-1])
         with open(fname, "wb") as f:
@@ -141,9 +142,9 @@ def LoadSeries(data=None, name='reading'):
         df = df[sorted(df.columns.values)]
         df.to_feather(fname)
 
-    return pd.read_feather(fname).set_index('index', drop=True)['2017':]
-    # return pd.read_feather(fname).set_index('index', drop=True)['2017':].rename(
-    #     columns={'Azimpur': 'Dhaka'}).sort_index(axis=1)
+    # return pd.read_feather(fname).set_index('index', drop=True)['2017':]
+    return pd.read_feather(fname).set_index('index', drop=True)['2017':].rename(
+        columns={'Azimpur': 'Dhaka', 'Tungi': 'Tongi'}).sort_index(axis=1)
 
 
 def LoadMetadata(allDistrictMetaData=None):
@@ -155,9 +156,10 @@ def LoadMetadata(allDistrictMetaData=None):
             pd.to_numeric).round(5)
         metaFrame.to_feather(metadataFileName)
 
-    return pd.read_feather(metadataFileName).set_index('Zone', drop=True)
-    # return pd.read_feather(metadataFileName).set_index('Zone', drop=True).rename(index={'Azimpur': 'Dhaka'}).sort_index(
-    #     axis=0)
+    # return pd.read_feather(metadataFileName).set_index('Zone', drop=True)
+    return pd.read_feather(metadataFileName).set_index('Zone', drop=True).rename(
+        index={'Azimpur': 'Dhaka', 'Tungi': 'Tongi'}).sort_index(
+        axis=0)
 
 
 def makeHeaderFile(metaFrame):
@@ -181,14 +183,53 @@ def allZoneRead():
     allDistrictMetaData.to_csv(berkely_earth_data + 'zones/allbd.csv', index=False)
 
 
+def handle_mislabeled_duplicates(series):
+    # series = series.set_index('time')
+    # series = series['2018-05']
+    # print(row['Zone'])
+    print(series.to_string())
 
+    duplicates = (series.duplicated(subset=['time'], keep='last'))
+    duplicated_series = series[duplicates]
+    firsts = series.loc[duplicated_series.index].time
+    lasts = series.loc[duplicated_series.index + 1].time + timedelta(hours=1)
+
+    firsts = firsts.reset_index()
+    lasts = lasts.reset_index()
+
+    print(firsts)
+    print(lasts)
+    print((firsts.time == lasts.time).value_counts())
+    # print(duplicated_series.time.dt.year.unique())
+    # print(duplicated_series.to_string())
+    # print(series.duplicated(keep=False).value_counts())
+
+
+def ReadPandasCSV():
+    zone_data = []
+
+    for idx, row in getZones().iterrows():
+        file = join(raw_data_path + getCommonID(), row['Zone'] + '.txt')
+        series = pd.read_csv(file, skiprows=10, sep='\t', header=None, usecols=[0, 1, 2, 3, 4])
+        series.columns = ['Year', 'Month', 'Day', 'Hour', 'PM25']
+        series['time'] = pd.to_datetime(series[['Year', 'Month', 'Day', 'Hour']])
+        series = series[['time', 'PM25']]
+
+        duplicates = (series.duplicated(subset=['time'], keep='first'))
+        series.loc[duplicates,'time'] = series.loc[duplicates,'time'] + timedelta(hours=1)
+        series = series.set_index('time').reindex(pd.date_range('2017-01-01','2021-01-01',freq = 'h')[:-1])
+        series.columns = [row['Zone']]
+        zone_data.append(series)
+    df = pd.concat(zone_data,axis=1)
+    return df
 
 
 if __name__ == '__main__':
-    # dataSummaries = LoadData()
-    timeseies = LoadSeries()
-    metaFrame = LoadMetadata()
+    df = ReadPandasCSV()
 
+    dataSummaries = LoadData()
+    # timeseies = LoadSeries()
+    # metaFrame = LoadMetadata()
 
     # for i in range(len(dataSummaries[1])): print(metaFrame.iloc[i, 0],
     #                                                  np.count_nonzero(dataSummaries[1][i] == None))

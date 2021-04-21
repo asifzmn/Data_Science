@@ -26268,3 +26268,488 @@ JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 987: NS_ERRO
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1618068435492	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebUHf2S"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1618068437113	Marionette	INFO	Listening on port 36703
+1618068437254	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618068440015	Marionette	INFO	Stopped listening on port 36703
+1618068459525	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileP2Chmg"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618068460853	Marionette	INFO	Listening on port 46771
+1618068460974	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+1618068511567	Marionette	INFO	Stopped listening on port 46771
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1618068515307	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFyT7hy"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618068516698	Marionette	INFO	Listening on port 44075
+1618068516721	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1618068565114	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileeI881Z"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618068566687	Marionette	INFO	Listening on port 44371
+1618068566754	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_eac490.js, line 1: TypeError: t is undefined
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1618074993944	Marionette	INFO	Stopped listening on port 44371
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1618684287731	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileaZ6dAy"
+1619000032880	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileuk5dwS"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619000034583	Marionette	INFO	Listening on port 39049
+1619000034599	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1619000068289	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebr6qbE"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619000069796	Marionette	INFO	Listening on port 42811
+1619000069907	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1619000149980	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile86JBuy"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619000151392	Marionette	INFO	Listening on port 35765
+1619000151550	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1619000776865	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiler0JsHB"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619000778206	Marionette	INFO	Listening on port 40577
+1619000778312	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1619000808681	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileba9vGB"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619000810006	Marionette	INFO	Listening on port 37695
+1619000810098	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1619000878737	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDG1vAF"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619000880042	Marionette	INFO	Listening on port 41651
+1619000880184	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+1619000906706	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+1619000912538	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+1619000918498	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+1619000924365	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://static.meteoblue.com/cdn/mapbox-gl-js/v1.11.1/mapbox-gl.js, line 31: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://www.meteoblue.com/build/website/highasakite_e54a9d.js, line 1: TypeError: t is undefined
+1619001131624	Marionette	INFO	Stopped listening on port 41651
