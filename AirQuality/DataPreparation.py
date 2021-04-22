@@ -11,8 +11,7 @@ import pandas as pd
 discard = 'Azimpur,Bhola,Patiya,Laksham,Netrakona,Madaripur,Ishurdi,Pabna,Tungipara,Ramganj,Raipur,Palang,Sherpur,Nagarpur,Sarishabari,Shahzadpur,Pirojpur,Maulavi_Bazar,Habiganj,Bhairab_Bazar,Sandwip,Satkania,Rangpur,Khagrachhari,Lakshmipur,Jamalpur,Saidpur,Chittagong,Lalmanirhat,Thakurgaon,Sylhet,Dinajpur'.split(
     ',')
 
-# aq_directory = '/home/asif/Work/Air Analysis/AQ Dataset/'
-aq_directory = '/media/az/Study/Air Analysis/AQ Dataset/'
+aq_directory = '/home/asif/Work/Air Analysis/AQ Dataset/'
 berkely_earth_data = aq_directory + 'Berkely Earth Data/'
 berkely_earth_data_prepared = berkely_earth_data + 'prepared/'
 meteoblue_data_path = aq_directory + 'Meteoblue Scrapped Data/'
