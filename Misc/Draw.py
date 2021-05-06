@@ -2,7 +2,6 @@ import random
 import plotly.graph_objects as go
 import numpy as np
 import pandas as pd
-from AirQuality.ObsoleteMethods import cmapPlotly
 
 if __name__ == '__main__':
 

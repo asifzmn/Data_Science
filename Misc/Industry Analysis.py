@@ -2,7 +2,6 @@ import pandas as pd
 from AirQuality.DataPreparation import LoadSeries, LoadMetadata
 from geopy.distance import geodesic
 import plotly.express as px
-import numpy as np
 
 
 def MapPlotIndustries(df):

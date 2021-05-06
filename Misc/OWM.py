@@ -1,8 +1,6 @@
-from datetime import datetime
-from sys import getsizeof
+
 import pandas as pd
 import requests
-import json
 
 from AirQuality.DataPreparation import LoadMetadata
 
